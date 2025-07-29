@@ -1,0 +1,760 @@
+**********************************************************************
+*                         SLURM Batch System                         *
+*              IN2P3 Computing Centre, Villeurbanne FR               *
+**********************************************************************
+* Date:                 Mon Jul 28 05:27:06 PM CEST 2025
+* Job name:             0nubb_Se82_10p2eve_single_job
+* Job id:               535894
+* User:                 ayanko
+* Account:              nemo
+* Submit host:          cca014
+* Partition:            htc
+* Quality of service:   normal
+* Nodelist:             ccwslurm0066
+* Operating System:     Red Hat Enterprise Linux release 9.6 (Plow)
+* Architecture:         x86_64
+**********************************************************************
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/TArrayCMod.h
+   requested to autoload type TArrayCMod
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/brio_record.h
+   requested to autoload type brio_record
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flreconstruct' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flreconstruct.variantService' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flreconstruct.services' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flreconstruct.pipeline' will ignore meta 'flreconstruct::section' !
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_TKReconstruct'...
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_main_scin_block'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_8inch_scin_block_extrusion'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_8inch_scin_block_extruded'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_5inch_scin_block_extrusion'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_5inch_scin_block_extruded'
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flreconstruct' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flreconstruct.variantService' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flreconstruct.services' will ignore meta 'flreconstruct::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flreconstruct.pipeline' will ignore meta 'flreconstruct::section' !
+[debug:void tkrec::TKReconstruct::_init_geom_(tkrec::Geometry&):52] Initializing geometry info...
+[debug:void tkrec::TKReconstruct::_init_geom_(tkrec::Geometry&):93] tc_radius = 21.975
+[debug:void tkrec::TKReconstruct::_init_geom_(tkrec::Geometry&):107] mw_sizex = 31
+[debug:void tkrec::TKReconstruct::_init_geom_(tkrec::Geometry&):108] mw_sizey = 256
+[debug:void tkrec::TKReconstruct::_init_geom_(tkrec::Geometry&):109] mw_sizez = 256
+[debug:void tkrec::TKReconstruct::_init_geom_(tkrec::Geometry&):110] gv_sizex = 308
+[debug:void tkrec::TKReconstruct::_init_geom_(tkrec::Geometry&):111] gv_sizey = 290
+[debug:void tkrec::TKReconstruct::_init_geom_(tkrec::Geometry&):112] gv_sizez = 150
+[debug:void tkrec::TKReconstruct::_init_geom_(tkrec::Geometry&):113] xw_sizex = 200
+[debug:void tkrec::TKReconstruct::_init_geom_(tkrec::Geometry&):114] xw_sizey = 150
+[debug:void tkrec::TKReconstruct::_init_geom_(tkrec::Geometry&):115] xw_sizez = 208.5
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 8
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #2
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #3
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #4
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #5
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 50
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #6
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #7
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 11
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #8
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 13
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 34
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #10
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #11
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 25
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #12
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #13
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 18
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #14
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 26
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #15
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 10
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #16
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #17
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #18
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 10
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #19
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #20
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #21
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 10
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #22
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 11
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #23
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 12
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #24
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #25
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 16
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #26
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 68
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #27
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 24
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #28
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 29
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #29
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 57
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #30
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 13
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #31
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 13
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #32
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #33
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 31
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #34
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 13
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #35
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 40
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #36
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 11
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #37
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 22
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #38
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 8
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #39
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #40
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 8
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #41
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #42
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 10
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #43
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 10
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #44
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 11
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #45
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 2
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 7
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #46
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #47
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #48
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 10
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #49
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #50
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 12
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #51
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 33
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #52
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #53
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 11
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #54
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 18
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #55
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 12
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #56
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 10
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #57
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 8
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #58
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 4
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #59
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 24
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #60
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 13
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #61
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #62
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #63
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 13
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #64
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 7
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #65
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 2
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #66
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 19
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #67
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 10
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #68
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #69
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #70
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 11
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #71
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 10
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #72
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #73
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #74
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 2
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 12
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #75
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #76
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 14
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #77
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 5
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #78
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 15
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #79
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #80
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #81
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 11
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #82
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #83
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 14
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #84
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #85
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 5
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #86
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 34
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #87
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #88
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #89
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 12
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #90
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #91
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 10
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #92
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 2
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 18
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #93
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #94
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #95
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 40
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #96
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 10
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #97
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 8
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #98
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 23
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #99
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 1
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 9
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:virtual dpp::base_module::process_status tkrec::TKReconstruct::process(datatools::things&):200] ============ New event #100
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):240] Has CD bank
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):244] Nb calo hits = 0
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):273] Nb tracker hits = 5
+[debug:void tkrec::TKReconstruct::_populate_working_event_(const datatools::things&):330] Working event has been populated
+[debug:void tkrec::Algos::process(tkrec::Event&):263] Processing 'electron polyline reconstruction' mode...
+[debug:void tkrec::Algos::process(tkrec::Event&):272] Processing 'alpha reconstruction' mode...
+[debug:falaise::exit_code FLReconstruct::do_pipeline(const FLReconstruct::FLReconstructParams&):181] Input module is terminated
+[notice:falaise::exit_code FLReconstruct::do_pipeline(const FLReconstruct::FLReconstructParams&):246] Number of processed input data records = 100
+****************************************************************
+*                      SLURM Batch System                      *
+*           IN2P3 Computing Centre, Villeurbanne FR            *
+****************************************************************
+Date: Mon Jul 28 05:27:14 PM CEST 2025
+Job informations can be found using these commands:
+Accounting:
+sacct -j 535894
+Efficiency:
+seff 535894
+****************************************************************

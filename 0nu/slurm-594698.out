@@ -1,0 +1,290 @@
+**********************************************************************
+*                         SLURM Batch System                         *
+*              IN2P3 Computing Centre, Villeurbanne FR               *
+**********************************************************************
+* Date:                 Tue Jul 29 03:58:10 PM CEST 2025
+* Job name:             0nubb_Se82_10p2eve_single_job
+* Job id:               594698
+* User:                 ayanko
+* Account:              nemo
+* Submit host:          cca012
+* Partition:            htc
+* Quality of service:   normal
+* Nodelist:             ccwslurm0207
+* Operating System:     Red Hat Enterprise Linux release 9.6 (Plow)
+* Architecture:         x86_64
+**********************************************************************
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/TArrayCMod.h
+   requested to autoload type TArrayCMod
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/brio_record.h
+   requested to autoload type brio_record
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.simulation' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.variantService' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.services' will ignore meta 'flsimulate::section' !
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_CAT'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'TrackFit'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_TrackFit'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_ChargedParticleTracking'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'GammaTracking'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_GammaClustering'...
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_main_scin_block'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_8inch_scin_block_extrusion'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_8inch_scin_block_extruded'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_5inch_scin_block_extrusion'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_5inch_scin_block_extruded'
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.simulation' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.variantService' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.services' will ignore meta 'flsimulate::section' !
+[debug:snreco::detail::GeigerTimePartitioner::GeigerTimePartitioner(double, bool, bool, bool):32] maxDelayedHitTimeGap  = 10 us
+[debug:snreco::detail::GeigerTimePartitioner::GeigerTimePartitioner(double, bool, bool, bool):33] classifyPromptHits_   = true
+[debug:snreco::detail::GeigerTimePartitioner::GeigerTimePartitioner(double, bool, bool, bool):34] classifyDelayedHits_  = true
+[debug:snreco::detail::GeigerTimePartitioner::GeigerTimePartitioner(double, bool, bool, bool):35] isSplitChamber_       = true
+CAT::clusterizer::initialize: Entering...
+CAT::clusterizer::readDstProper: Entering...
+CAT::clusterizer::readDstProper: SuperNemo kind of data
+CAT::clusterizer::readDstProper: small radius 2 mm
+CAT::clusterizer::readDstProper: tangent phi 20
+CAT::clusterizer::readDstProper: tangent theta 160
+CAT::clusterizer::readDstProper: small number 0.1 mm
+CAT::clusterizer::readDstProper: quadrant angle 90
+CAT::clusterizer::readDstProper: ratio 10000
+CAT::clusterizer::readDstProper: compatibility distance 4
+CAT::clusterizer::readDstProper: maximum chi2 3
+CAT::clusterizer::readDstProper: probmin 0
+CAT::clusterizer::readDstProper: first event number -1
+CAT::clusterizer::readDstProper: cell pitch:  43.95 mm
+CAT::clusterizer::readDstProper: verbosity print level: 2
+CAT::clusterizer::readDstProper: Done.
+CAT::clusterizer::initialize: Done.
+CAT::sequentiator::readDstProper: SuperNemo kind of data
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (116.853,328.307,-1451.7) mm
+[error] |-- Radius : 50.8186 mm
+[error] |-- Step   : 432.425
+[error] |-- T1     : -0.3732 (-2.34489 radian)
+[error] |-- T2     : 0.44345 (2.78628 radian)
+[error] `-- Length : 438.98 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (184.279,-1875.07,1098) mm
+[error] |-- Radius : 151.599 mm
+[error] |-- Step   : -868.246
+[error] |-- T1     : -0.614543 (-3.86129 radian)
+[error] |-- T2     : -0.360426 (-2.26462 radian)
+[error] `-- Length : 327.521 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (184.26,-1875.08,1098.03) mm
+[error] |-- Radius : 151.582 mm
+[error] |-- Step   : -868.269
+[error] |-- T1     : -0.614558 (-3.86138 radian)
+[error] |-- T2     : -0.360413 (-2.26454 radian)
+[error] `-- Length : 327.541 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (409993,31254.8,1.10453e+06) mm
+[error] |-- Radius : 411180 mm
+[error] |-- Step   : -731237
+[error] |-- T1     : -0.488335 (-3.0683 radian)
+[error] |-- T2     : -0.488266 (-3.06786 radian)
+[error] `-- Length : 185.779 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (1.74168e+06,129317,4.69446e+06) mm
+[error] |-- Radius : 1.74647e+06 mm
+[error] |-- Step   : -3.10601e+06
+[error] |-- T1     : -0.488309 (-3.06814 radian)
+[error] |-- T2     : -0.488293 (-3.06804 radian)
+[error] `-- Length : 185.779 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (3003.65,3983.1,14108.2) mm
+[error] |-- Radius : 3908.53 mm
+[error] |-- Step   : -9104.64
+[error] |-- T1     : -0.3858 (-2.42405 radian)
+[error] |-- T2     : -0.365551 (-2.29682 radian)
+[error] `-- Length : 530.356 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (2749.42,3712.77,12706.2) mm
+[error] |-- Radius : 3539.44 mm
+[error] |-- Step   : -8244.5
+[error] |-- T1     : -0.387438 (-2.43435 radian)
+[error] |-- T2     : -0.365073 (-2.29382 radian)
+[error] `-- Length : 530.462 mm
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 2 to 3, 2nd from 3 to 1
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 2 to 3, 2nd from 3 to 1
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 3 to 1, 2nd from 2 to 1
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 2 to 1, 2nd from 3 to 1
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 3 to 1, 2nd from 2 to 1
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 2 to 1, 2nd from 3 to 1
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 3 to 1, 2nd from 2 to 1
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 2 to 1, 2nd from 3 to 1
+SysError in <TFile::WriteBuffer>: error writing to file /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/reco.brio (-1) Stale file handle
+Error in <TBranchElement::WriteBasketImpl>: basket's WriteBuffer failed.
+Error in <TBranchElement::TBranch::Fill>: Failed to write out basket.
+
+Error in <TBranchElement::Fill>: Failed filling branch:datatools::things, nbytes=-1
+Error in <TTree::Fill>: Failed filling branch:ER.datatools::things, nbytes=-1, entry=693
+ This error is symptomatic of a Tree created as a memory-resident Tree
+ Instead of doing:
+    TTree *T = new TTree(...)
+    TFile *f = new TFile(...)
+ you should do:
+    TFile *f = new TFile(...)
+    TTree *T = new TTree(...)
+
+
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (348.028,-103.579,-2599.63) mm
+[error] |-- Radius : 280.003 mm
+[error] |-- Step   : -1305.35
+[error] |-- T1     : 0.415413 (2.61012 radian)
+[error] |-- T2     : 0.515285 (3.23763 radian)
+[error] `-- Length : 218.788 mm
+CAT::LinearRegression::fit: problem: in least square regression, delta 0 Sw 0.0278574 Swx -12.1134 Swxx 5267.37
+CAT::LinearRegression::fit: problem: in least square regression, delta 0 Sw 0.0278574 Swx -12.1134 Swxx 5267.37
+Error in <TBranchElement::WriteBasketImpl>: basket's WriteBuffer failed.
+Error in <TBranchElement::TBranch::Fill>: Failed to write out basket.
+
+Error in <TBranchElement::Fill>: Failed filling branch:datatools::things, nbytes=-1
+Error in <TTree::Fill>: Failed filling branch:ER.datatools::things, nbytes=-1, entry=875
+ This error is symptomatic of a Tree created as a memory-resident Tree
+ Instead of doing:
+    TTree *T = new TTree(...)
+    TFile *f = new TFile(...)
+ you should do:
+    TFile *f = new TFile(...)
+    TTree *T = new TTree(...)
+
+
+[debug:falaise::exit_code FLReconstruct::do_pipeline(const FLReconstruct::FLReconstructParams&):181] Input module is terminated
+[notice:falaise::exit_code FLReconstruct::do_pipeline(const FLReconstruct::FLReconstructParams&):246] Number of processed input data records = 1000
+CAT::clusterizer::finalize: Ending algorithm clusterizer...
+CAT::clusterizer::finalize: Initial events:  0
+CAT::clusterizer::finalize: Skipped events:  0 ( -nan %)
+CAT::clockable::dump: time of ' clusterizer: clusterize ' : 22060.7 ms (100 %)
+CAT::clockable::dump: time of ' clusterizer: is good couplet ' : 6040.42 ms (27.381 %)
+CAT::clockable::dump: time of ' clusterizer: get near cells ' : 353 ms (1.60013 %)
+CAT::clockable::dump: time of ' clusterizer: prepare event ' : 110.771 ms (0.50212 %)
+CAT::clockable::dump: time of ' clusterizer: order cells ' : 11.319 ms (0.0513085 %)
+CAT::clockable::dump: time of ' clusterizer: setup_clusters ' : 1.352 ms (0.00612856 %)
+CAT::clockable::dump: time of ' clusterizer: finalize ' : 0.043 ms (0.000194917 %)
+CAT::sequentiator::finalize: Ending algorithm sequentiator
+CAT::sequentiator::finalize: Initial events:  0
+CAT::sequentiator::finalize: Skipped events:  0 ( -nan %)
+CAT::clockable::dump: time of ' sequentiator: sequentiate ' : 62852.5 ms (100 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence ' : 32874.5 ms (52.3041 %)
+CAT::clockable::dump: time of ' sequentiator: clean up sequences ' : 29128.1 ms (46.3436 %)
+CAT::clockable::dump: time of ' sequentiator: manage copy sequence ' : 20745.1 ms (33.006 %)
+CAT::clockable::dump: time of ' sequentiator: evolve ' : 19386.4 ms (30.8443 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part B ' : 16782 ms (26.7006 %)
+CAT::clockable::dump: time of ' sequentiator: pick new cell ' : 15058.5 ms (23.9584 %)
+CAT::clockable::dump: time of ' sequentiator: make new sequence ' : 13542.3 ms (21.5461 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: part A ' : 12011.9 ms (19.1113 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: evolve ' : 10956.2 ms (17.4316 %)
+CAT::clockable::dump: time of ' sequentiator: make scenarios ' : 6513.96 ms (10.3639 %)
+CAT::clockable::dump: time of ' sequentiator: can add family ' : 5318.84 ms (8.46242 %)
+CAT::clockable::dump: time of ' sequentiator: add pair ' : 3055.15 ms (4.86083 %)
+CAT::clockable::dump: time of ' sequentiator: set free level ' : 3051.53 ms (4.85506 %)
+CAT::clockable::dump: time of ' sequentiator: can match ' : 2747.41 ms (4.3712 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part C ' : 2548.59 ms (4.05487 %)
+CAT::clockable::dump: time of ' sequentiator: copy scenario ' : 1907.35 ms (3.03465 %)
+CAT::clockable::dump: time of ' sequentiator: copy sequence ' : 1835.06 ms (2.91963 %)
+CAT::clockable::dump: time of ' sequentiator: copy to lfn ' : 1044.13 ms (1.66124 %)
+CAT::clockable::dump: time of ' sequentiator: interpret physics ' : 933.535 ms (1.48528 %)
+CAT::clockable::dump: time of ' sequentiator: better scenario ' : 794.582 ms (1.2642 %)
+CAT::clockable::dump: time of ' sequentiator: direct out of foil ' : 769.728 ms (1.22466 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part B: set free level ' : 454.193 ms (0.722633 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part B: noc ' : 318.066 ms (0.506052 %)
+CAT::clockable::dump: time of ' sequentiator: calculate scenario ' : 217.618 ms (0.346236 %)
+CAT::clockable::dump: time of ' sequentiator: good first node ' : 29.125 ms (0.0463387 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part A ' : 16.775 ms (0.0266895 %)
+CAT::clockable::dump: time of ' sequentiator: make families ' : 16.663 ms (0.0265113 %)
+CAT::clockable::dump: time of ' sequentiator: get link index ' : 9.587 ms (0.0152532 %)
+CAT::clockable::dump: time of ' sequentiator: there is free sequence beginning with ' : 2.631 ms (0.00418599 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: part A: alpha ' : 1.736 ms (0.00276202 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: part A: beta ' : 1.726 ms (0.00274611 %)
+CAT::clockable::dump: time of ' sequentiator: direct scenarios out of foil ' : 1.708 ms (0.00271747 %)
+CAT::clockable::dump: time of ' sequentiator: finalize ' : 0.001 ms (1.59103e-06 %)
+CAT::clockable::dump: time of ' sequentiator: match gaps ' : 0 ms (0 %)
+CAT::clockable::dump: time of ' sequentiator: sequentiation ' : 0 ms (0 %)
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/TArrayCMod.h
+   requested to autoload type TArrayCMod
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/brio_record.h
+   requested to autoload type brio_record
+Warning in <TFile::Init>: file /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/reco.brio probably not closed, trying to recover
+Warning in <TFile::Init>: no keys recovered, file has been made a Zombie
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  [void datatools::multi_properties::config::read(const string&, datatools::multi_properties&):713: Cannot open filename '/sps/nemo/scratch/ayanko/kink_track_study_Anna/onu/CimrmanModule/testing/test2/pipeline.conf' (resolved as '/sps/nemo/scratch/ayanko/kink_track_study_Anna/onu/CimrmanModule/testing/test2/pipeline.conf'!]
+/var/spool/slurmd/job594698/slurm_script: line 20: 504469 Aborted                 (core dumped) /sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin/flreconstruct -i /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/reco.brio -p reco.conf -o /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/reco2.brio
+terminate called after throwing an instance of 'std::logic_error'
+  what():  [void FLReconstruct::do_postprocess(FLReconstruct::FLReconstructParams&):668: Missing services configuration file!]
+/var/spool/slurmd/job594698/slurm_script: line 21: 504507 Aborted                 (core dumped) /sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin/flreconstruct -i /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/reco2.brio -p SNCuts/build/SNCutsPipeline.conf -o CDFiltered.brio
+****************************************************************
+*                      SLURM Batch System                      *
+*           IN2P3 Computing Centre, Villeurbanne FR            *
+****************************************************************
+Date: Tue Jul 29 04:01:04 PM CEST 2025
+Job informations can be found using these commands:
+Accounting:
+sacct -j 594698
+Efficiency:
+seff 594698
+****************************************************************
