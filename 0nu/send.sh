@@ -21,6 +21,6 @@ CONF_FAL=/sps/nemo/sw/Falaise/install_develop/share/Falaise-4.1.0/resources/snem
 
 
 /sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin/flreconstruct -i /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/reco.brio -p reco.conf -o /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/reco2.brio
-/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin/flreconstruct -i /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/reco2.brio -p SNCuts/build/SNCutsPipeline.conf -o CDFiltered.brio
+/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin/flreconstruct -i /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/reco2.brio -p /sps/nemo/scratch/software/SNCuts/build/SNCutsPipeline.conf -o CDFiltered.brio
 # /sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin/flreconstruct -i /pbs/home/a/ayanko/hihihaha/pb/Reco_pb1000.brio -p /pbs/home/a/ayanko/private/MiModule/p_MiModule_v00.conf
 
