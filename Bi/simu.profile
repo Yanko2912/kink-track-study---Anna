@@ -24,5 +24,5 @@ generator = "Bi214"
 physics_mode = "Constructors"
 physics_mode/if_constructors/em_model = "standard"
 production_cuts = true
-output_profile = "none"
+output_profile = "all_details"
 
