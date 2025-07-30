@@ -1,0 +1,781 @@
+**********************************************************************
+*                         SLURM Batch System                         *
+*              IN2P3 Computing Centre, Villeurbanne FR               *
+**********************************************************************
+* Date:                 Wed Jul 30 11:18:01 AM CEST 2025
+* Job name:             0nubb_Se82_10p2eve_single_job
+* Job id:               661084
+* User:                 ayanko
+* Account:              nemo
+* Submit host:          cca013
+* Partition:            htc
+* Quality of service:   normal
+* Nodelist:             ccwslurm0010
+* Operating System:     Red Hat Enterprise Linux release 9.6 (Plow)
+* Architecture:         x86_64
+**********************************************************************
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_main_scin_block'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_8inch_scin_block_extrusion'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_8inch_scin_block_extruded'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_5inch_scin_block_extrusion'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_5inch_scin_block_extruded'
+[notice:virtual void mctools::g4::manager::_init_core():1186] Main manager settings...
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'calo_details' is supported.
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'tracker_details' is supported.
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'source_details' is supported.
+[notice:void mctools::g4::manager::add_supported_output_profile(const string&, const string&):744] Output profile 'all_details' is supported.
+[notice:void mctools::g4::manager::_init_seeds():1609] Using registered seed for 'MGR' : 743853941
+[notice:void mctools::g4::manager::_init_seeds():1618] Using registered seed for 'VG' : 423828170
+[notice:void mctools::g4::manager::_init_seeds():1627] Using registered seed for 'EG' : 599261185
+[notice:void mctools::g4::manager::_init_seeds():1636] Using registered seed for 'SHPF' : 187801114
+[notice:virtual void mctools::g4::manager::_init_prngs():1786] Setting the HepRandomEngine to 'mctools::g4::g4_prng'...
+[notice:virtual void mctools::g4::manager::_init_geometry():1356] Geometry manager settings...
+[notice:virtual void mctools::g4::manager::_init_geometry():1358] Use external geometry manager...
+[notice:virtual void mctools::g4::manager::_init_vertex_generator():1389] Vertex generator settings...
+[notice:virtual void mctools::g4::manager::_init_event_generator():1438] Primary event generator settings...
+
+*************************************************************
+ Geant4 version Name: geant4-09-06-patch-04    (30-January-2015)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+HepRandomEngine::put called -- no effect!
+[notice:virtual void mctools::g4::manager::_init_detector_construction():1478] Detector construction...
+[notice:virtual void mctools::g4::manager::_init_physics_list():1492] Physics list initialization...
+[notice:virtual void mctools::g4::manager::_init_run_action():1506] Run action initialization...
+[notice:virtual void mctools::g4::manager::_init_event_action():1532] Event action initialization...
+[notice:virtual void mctools::g4::manager::_init_primary_generator_action():1545] Primary generator action initialization...
+[notice:virtual void mctools::g4::manager::_init_tracking_action():1564] Tracking action initialization...
+[notice:virtual void mctools::g4::manager::_init_stepping_action():1574] Stepping action initialization...
+[notice:virtual void mctools::g4::manager::_init_stacking_action():1584] Stacking action initialization...
+[notice:virtual void mctools::g4::manager::initialize_impl():952] G4 kernel initialization...
+G4GDML: Reading '/tmp/ayanko/snemodemo_mc_g4.d/mctools_g4_geometry.gdml.h8eP30'...
+G4GDML: Reading definitions...
+G4GDML: Reading materials...
+G4GDML: Reading solids...
+G4GDML: Reading structure...
+G4GDML: Reading setup...
+G4GDML: Reading '/tmp/ayanko/snemodemo_mc_g4.d/mctools_g4_geometry.gdml.h8eP30' done!
+[notice] SHPF: Step hit processor: 'calorimeter.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'calorimeter.hit_processor'
+[notice] |-- Hit category       : 'calo'
+[notice] |-- Sensitive category : 'calorimeter_SD'
+[notice] |-- Geometry manager   : 0x1b7b6a0
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'calorimeter_SD'
+[notice] |-- Private pool : 0x36d9cd0
+[notice] |-- Pool owner   : 0
+[notice] |-- Pool         : 0x36d9cd0
+[notice] |-- Time range : 1 (ns)
+[notice] |-- Space range : 10 (mm)
+[notice] |-- Mapping category : 'calorimeter_block'
+[notice] |-- Mapping    : 0x1b7ba60
+[notice] |-- Categories : 0x1b7b9f8 [54]
+[notice] `-- Calorimeter block type : 1302
+[notice] SHPF: Step hit processor: 'gg.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'gg.hit_processor'
+[notice] |-- Hit category       : 'gg'
+[notice] |-- Sensitive category : 'tracker_SD'
+[notice] |-- Geometry manager   : 0x1b7b6a0
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'tracker_SD'
+[notice] |-- Private pool : 0
+[notice] |-- Pool owner   : 0
+[notice] `-- Pool         : 0
+[notice] SHPF: Step hit processor: 'gveto.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'gveto.hit_processor'
+[notice] |-- Hit category       : 'gveto'
+[notice] |-- Sensitive category : 'gveto_SD'
+[notice] |-- Geometry manager   : 0x1b7b6a0
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'gveto_SD'
+[notice] |-- Private pool : 0x37cc460
+[notice] |-- Pool owner   : 0
+[notice] |-- Pool         : 0x37cc460
+[notice] |-- Time range : 1 (ns)
+[notice] |-- Space range : 10 (mm)
+[notice] |-- Mapping category : 'gveto_block'
+[notice] |-- Mapping    : 0x1b7ba60
+[notice] |-- Categories : 0x1b7b9f8 [54]
+[notice] `-- Calorimeter block type : 1252
+[notice] SHPF: Step hit processor: 'xcalorimeter.hit_processor' (instantiated) :
+[notice] |-- Logging priority   : fatal
+[notice] |-- Name               : 'xcalorimeter.hit_processor'
+[notice] |-- Hit category       : 'xcalo'
+[notice] |-- Sensitive category : 'xcalorimeter_SD'
+[notice] |-- Geometry manager   : 0x1b7b6a0
+[notice] |-- Auxiliary properties : 
+[notice] |   `-- Name : 'sensitive.category'
+[notice] |       |-- Type  : string (scalar)
+[notice] |       `-- Value : 'xcalorimeter_SD'
+[notice] |-- Private pool : 0x37d3e90
+[notice] |-- Pool owner   : 0
+[notice] |-- Pool         : 0x37d3e90
+[notice] |-- Time range : 1 (ns)
+[notice] |-- Space range : 10 (mm)
+[notice] |-- Mapping category : 'xcalo_block'
+[notice] |-- Mapping    : 0x1b7ba60
+[notice] |-- Categories : 0x1b7b9f8 [54]
+[notice] `-- Calorimeter block type : 1232
+[warning:void mctools::g4::em_field_g4_stuff::initialize(const datatools::properties&):256] Using default EM field stepper for field labelled 'module'!
+[warning:void mctools::g4::em_field_g4_stuff::initialize(const datatools::properties&):333] Field labelled 'module' is propagated to daughter volumes!
+[notice:static void mctools::g4::manager_parameters::setup(const mctools::g4::manager_parameters&, mctools::g4::manager&):269] Simulation manager has been configured and initialized.
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/TArrayCMod.h
+   requested to autoload type TArrayCMod
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/brio_record.h
+   requested to autoload type brio_record
+[notice:void mctools::g4::manager::run_simulation():188] Starting the simulation...
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1051] Entering batch mode...
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1063] Entering automatic mode...
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1099] G4 command = /run/beamOn 1000000000
+
+phot:   for  gamma    SubType= 12
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :  Emin=        0 eV    Emax=       10 TeV   AngularGenSauterGavrila
+
+compt:   for  gamma    SubType= 13
+      Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :  Emin=        0 eV    Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14
+      Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.005, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.005, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+    SubType= 5
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for proton    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+msc:   for GenericIon    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV
+
+ionIoni:   for  GenericIon    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      Stopping Power data for 17 ion/material pairs 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+msc:   for alpha    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+msc:   for anti_proton    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          UrbanMsc95 :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  anti_proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV in 77 bins, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes     recalculation needed : No 
+ Material : vacuum
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1 keV    e-  1 keV    e+  1 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes     recalculation needed : No 
+ Material : lab_air
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1 keV    e-  1 keV    e+  1 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__iron
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  20.8129 keV    e-  1.28578 MeV    e+  1.21852 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 3     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__concrete
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  4.87903 keV    e-  559.114 keV    e+  540.651 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 4     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__PTFE
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  4.35261 keV    e-  529.867 keV    e+  515.822 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 5     used in the geometry : Yes     recalculation needed : No 
+ Material : tracking_gas
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1 keV    e-  1 keV    e+  1 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 6     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__mylar
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  3.00838 keV    e-  421.697 keV    e+  405.042 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 7     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__PMMA
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.78478 keV    e-  391.667 keV    e+  378.733 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 8     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__nylon
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.66584 keV    e-  394.306 keV    e+  383.855 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 9     used in the geometry : Yes     recalculation needed : No 
+ Material : glass
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  5.36002 keV    e-  544.294 keV    e+  522.797 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 10     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__plexiglass
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.78478 keV    e-  391.667 keV    e+  378.733 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 11     used in the geometry : Yes     recalculation needed : No 
+ Material : RTV
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.9385 keV    e-  351.763 keV    e+  340.147 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 12     used in the geometry : Yes     recalculation needed : No 
+ Material : SBR
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.31517 keV    e-  335.609 keV    e+  326.713 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 13     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__copper
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  24.7837 keV    e-  1.39369 MeV    e+  1.32079 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 14     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__delrin
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  3.17444 keV    e-  430.279 keV    e+  421.697 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 15     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__mu_metal
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  23.9653 keV    e-  1.42206 MeV    e+  1.32969 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 16     used in the geometry : Yes     recalculation needed : No 
+ Material : snemo__beryllium-copper
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  23.6456 keV    e-  1.32079 MeV    e+  1.2517 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 17     used in the geometry : Yes     recalculation needed : No 
+ Material : wire_metal
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  21.2365 keV    e-  1.30317 MeV    e+  1.235 MeV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 18     used in the geometry : Yes     recalculation needed : No 
+ Material : ENVINET_PS_scintillator
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.39423 keV    e-  358.922 keV    e+  344.747 keV proton 100 keV
+ Region(s) which use this couple : 
+    calorimeter
+
+Index : 19     used in the geometry : Yes     recalculation needed : No 
+ Material : Dubna_PS_scintillator
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.39423 keV    e-  358.922 keV    e+  344.747 keV proton 100 keV
+ Region(s) which use this couple : 
+    calorimeter
+
+Index : 20     used in the geometry : Yes     recalculation needed : No 
+ Material : bb_source_material.basic
+ Range cuts        :  gamma  50 um     e-  50 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.56055 keV    e-  70.6589 keV    e+  450.99 keV proton 100 keV
+ Region(s) which use this couple : 
+    source
+
+Index : 21     used in the geometry : Yes     recalculation needed : No 
+ Material : tracking_gas
+ Range cuts        :  gamma  500 um     e-  500 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  1 keV    e-  1 keV    e+  1 keV proton 100 keV
+ Region(s) which use this couple : 
+    tracker
+
+Index : 22     used in the geometry : Yes     recalculation needed : No 
+ Material : wire_metal
+ Range cuts        :  gamma  500 um     e-  500 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  14.8765 keV    e-  736.348 keV    e+  1.235 MeV proton 100 keV
+ Region(s) which use this couple : 
+    tracker
+
+Index : 23     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__copper
+ Range cuts        :  gamma  500 um     e-  500 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  17.1297 keV    e-  787.499 keV    e+  1.32079 MeV proton 100 keV
+ Region(s) which use this couple : 
+    tracker
+
+Index : 24     used in the geometry : Yes     recalculation needed : No 
+ Material : basic__delrin
+ Range cuts        :  gamma  500 um     e-  500 um     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.39423 keV    e-  270.707 keV    e+  421.697 keV proton 100 keV
+ Region(s) which use this couple : 
+    tracker
+
+====================================================================
+
+HepRandomEngine::put called -- no effect!
+[notice:virtual void mctools::g4::manager::run_simulation_impl():1112] Record the final PRNG internal states after the session has stopped normaly.
+[notice:void mctools::g4::manager::run_simulation():190] Simulation stops !
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/TArrayCMod.h
+   requested to autoload type TArrayCMod
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/brio_record.h
+   requested to autoload type brio_record
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.simulation' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.variantService' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.services' will ignore meta 'flsimulate::section' !
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_CAT'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'TrackFit'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_TrackFit'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_ChargedParticleTracking'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'GammaTracking'...
+[notice:void datatools::library_loader::_init():467] Automatic loading of library 'Falaise_GammaClustering'...
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_main_scin_block'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_8inch_scin_block_extrusion'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_8inch_scin_block_extruded'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_5inch_scin_block_extrusion'
+[trace:geomtools::i_object_3d::handle_type geomtools::shape_factory::create(const string&, const string&, const datatools::properties&):89] Shape factory now stores object='calorimeter_5inch_scin_block_extruded'
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.simulation' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.variantService' will ignore meta 'flsimulate::section' !
+[warning:datatools::properties& datatools::multi_properties::add_impl2(const string&, const string&):534] Key 'flsimulate.services' will ignore meta 'flsimulate::section' !
+[debug:snreco::detail::GeigerTimePartitioner::GeigerTimePartitioner(double, bool, bool, bool):32] maxDelayedHitTimeGap  = 10 us
+[debug:snreco::detail::GeigerTimePartitioner::GeigerTimePartitioner(double, bool, bool, bool):33] classifyPromptHits_   = true
+[debug:snreco::detail::GeigerTimePartitioner::GeigerTimePartitioner(double, bool, bool, bool):34] classifyDelayedHits_  = true
+[debug:snreco::detail::GeigerTimePartitioner::GeigerTimePartitioner(double, bool, bool, bool):35] isSplitChamber_       = true
+CAT::clusterizer::initialize: Entering...
+CAT::clusterizer::readDstProper: Entering...
+CAT::clusterizer::readDstProper: SuperNemo kind of data
+CAT::clusterizer::readDstProper: small radius 2 mm
+CAT::clusterizer::readDstProper: tangent phi 20
+CAT::clusterizer::readDstProper: tangent theta 160
+CAT::clusterizer::readDstProper: small number 0.1 mm
+CAT::clusterizer::readDstProper: quadrant angle 90
+CAT::clusterizer::readDstProper: ratio 10000
+CAT::clusterizer::readDstProper: compatibility distance 4
+CAT::clusterizer::readDstProper: maximum chi2 3
+CAT::clusterizer::readDstProper: probmin 0
+CAT::clusterizer::readDstProper: first event number -1
+CAT::clusterizer::readDstProper: cell pitch:  43.95 mm
+CAT::clusterizer::readDstProper: verbosity print level: 2
+CAT::clusterizer::readDstProper: Done.
+CAT::clusterizer::initialize: Done.
+CAT::sequentiator::readDstProper: SuperNemo kind of data
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (-163.235,198.185,1749.09) mm
+[error] |-- Radius : 78.2812 mm
+[error] |-- Step   : -930.718
+[error] |-- T1     : -0.699169 (-4.39301 radian)
+[error] |-- T2     : -0.374494 (-2.35301 radian)
+[error] `-- Length : 341.783 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (942.427,954.527,3179.77) mm
+[error] |-- Radius : 1340.19 mm
+[error] |-- Step   : -2781.21
+[error] |-- T1     : -0.616418 (-3.87307 radian)
+[error] |-- T2     : -0.378338 (-2.37717 radian)
+[error] `-- Length : 2111.32 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (941.627,956.926,3178.28) mm
+[error] |-- Radius : 1338.56 mm
+[error] |-- Step   : -2779.74
+[error] |-- T1     : -0.616269 (-3.87213 radian)
+[error] |-- T2     : -0.378074 (-2.37551 radian)
+[error] `-- Length : 2109.9 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (937.136,953.585,3163.94) mm
+[error] |-- Radius : 1335.17 mm
+[error] |-- Step   : -2770.85
+[error] |-- T1     : -0.616923 (-3.87624 radian)
+[error] |-- T2     : -0.377993 (-2.375 radian)
+[error] `-- Length : 2110.93 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (942.472,954.525,3179.92) mm
+[error] |-- Radius : 1340.24 mm
+[error] |-- Step   : -2781.31
+[error] |-- T1     : -0.616414 (-3.87305 radian)
+[error] |-- T2     : -0.378342 (-2.37719 radian)
+[error] `-- Length : 2111.32 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (951.039,956.231,3205.68) mm
+[error] |-- Radius : 1348.44 mm
+[error] |-- Step   : -2798.15
+[error] |-- T1     : -0.615586 (-3.86784 radian)
+[error] |-- T2     : -0.378881 (-2.38058 radian)
+[error] `-- Length : 2112.03 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (936.845,955.265,3163.66) mm
+[error] |-- Radius : 1333.72 mm
+[error] |-- Step   : -2770.32
+[error] |-- T1     : -0.616798 (-3.87545 radian)
+[error] |-- T2     : -0.377829 (-2.37397 radian)
+[error] `-- Length : 2109.14 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (937.136,953.585,3163.94) mm
+[error] |-- Radius : 1335.17 mm
+[error] |-- Step   : -2770.85
+[error] |-- T1     : -0.616923 (-3.87624 radian)
+[error] |-- T2     : -0.377993 (-2.375 radian)
+[error] `-- Length : 2110.93 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (937.138,953.585,3163.94) mm
+[error] |-- Radius : 1335.18 mm
+[error] |-- Step   : -2770.85
+[error] |-- T1     : -0.616923 (-3.87624 radian)
+[error] |-- T2     : -0.377993 (-2.375 radian)
+[error] `-- Length : 2110.93 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (158.342,-996.755,-5420.79) mm
+[error] |-- Radius : 420.72 mm
+[error] |-- Step   : -3431.99
+[error] |-- T1     : 0.473405 (2.97449 radian)
+[error] |-- T2     : 0.521724 (3.27809 radian)
+[error] `-- Length : 209.317 mm
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 2 to 1, 2nd from 1 to 0
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 2 to 1, 2nd from 1 to 0
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 2 to 1, 2nd from 1 to 0
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 2 to 1, 2nd from 1 to 0
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 1 to 0, 2nd from 2 to 0
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 2 to 0, 2nd from 1 to 0
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 1 to 0, 2nd from 2 to 0
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 2 to 0, 2nd from 1 to 0
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 1 to 0, 2nd from 2 to 0
+ problem: sequences with same size and cells have different beginnings or endings: 1st sequence from 2 to 0, 2nd from 1 to 0
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (765.111,1603.62,-4264.6) mm
+[error] |-- Radius : 890.497 mm
+[error] |-- Step   : -2319.3
+[error] |-- T1     : 0.424455 (2.66693 radian)
+[error] |-- T2     : 0.56786 (3.56797 radian)
+[error] `-- Length : 868.573 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (765.109,1603.62,-4264.59) mm
+[error] |-- Radius : 890.495 mm
+[error] |-- Step   : -2319.3
+[error] |-- T1     : 0.424455 (2.66693 radian)
+[error] |-- T2     : 0.56786 (3.56797 radian)
+[error] `-- Length : 868.572 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (765.102,1603.62,-4264.58) mm
+[error] |-- Radius : 890.489 mm
+[error] |-- Step   : -2319.29
+[error] |-- T1     : 0.424455 (2.66693 radian)
+[error] |-- T2     : 0.56786 (3.56797 radian)
+[error] `-- Length : 868.573 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (765.111,1603.62,-4264.6) mm
+[error] |-- Radius : 890.498 mm
+[error] |-- Step   : -2319.3
+[error] |-- T1     : 0.424455 (2.66693 radian)
+[error] |-- T2     : 0.56786 (3.56797 radian)
+[error] `-- Length : 868.573 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (765.092,1603.62,-4264.54) mm
+[error] |-- Radius : 890.479 mm
+[error] |-- Step   : -2319.27
+[error] |-- T1     : 0.424454 (2.66692 radian)
+[error] |-- T2     : 0.567861 (3.56798 radian)
+[error] `-- Length : 868.573 mm
+[error:void snemo::reconstruction::trackfit_driver::_process_cluster_(const TrackerClusterHdl&, snemo::datamodel::TrackerTrajectorySolutionHdl&):587] ************ Possible bug: this fitted helix is out of the tracking chamber !!!! Reject it!
+[error] *** Rejected helix : 
+[error] |-- Logging priority : "fatal"
+[error] |-- Shape name : "helix_3d"
+[error] |-- Dimensionality : 1
+[error] |-- Tolerance  = 1e-07 mm
+[error] |-- Angular tolerance  = 1.74533e-14 radian
+[error] |-- Wires drawer : <none>
+[error] |-- Center : (765.1,1603.62,-4264.57) mm
+[error] |-- Radius : 890.487 mm
+[error] |-- Step   : -2319.28
+[error] |-- T1     : 0.424455 (2.66693 radian)
+[error] |-- T2     : 0.56786 (3.56797 radian)
+[error] `-- Length : 868.573 mm
+[debug:falaise::exit_code FLReconstruct::do_pipeline(const FLReconstruct::FLReconstructParams&):181] Input module is terminated
+[notice:falaise::exit_code FLReconstruct::do_pipeline(const FLReconstruct::FLReconstructParams&):246] Number of processed input data records = 1000
+CAT::clusterizer::finalize: Ending algorithm clusterizer...
+CAT::clusterizer::finalize: Initial events:  0
+CAT::clusterizer::finalize: Skipped events:  0 ( -nan %)
+CAT::clockable::dump: time of ' clusterizer: clusterize ' : 2383.71 ms (100 %)
+CAT::clockable::dump: time of ' clusterizer: is good couplet ' : 654.882 ms (27.4732 %)
+CAT::clockable::dump: time of ' clusterizer: get near cells ' : 31.764 ms (1.33254 %)
+CAT::clockable::dump: time of ' clusterizer: prepare event ' : 11.791 ms (0.494649 %)
+CAT::clockable::dump: time of ' clusterizer: order cells ' : 1.49 ms (0.0625076 %)
+CAT::clockable::dump: time of ' clusterizer: setup_clusters ' : 0.193 ms (0.00809662 %)
+CAT::clockable::dump: time of ' clusterizer: finalize ' : 0.035 ms (0.0014683 %)
+CAT::sequentiator::finalize: Ending algorithm sequentiator
+CAT::sequentiator::finalize: Initial events:  0
+CAT::sequentiator::finalize: Skipped events:  0 ( -nan %)
+CAT::clockable::dump: time of ' sequentiator: sequentiate ' : 4716.02 ms (100 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence ' : 1666.8 ms (35.3435 %)
+CAT::clockable::dump: time of ' sequentiator: evolve ' : 1550.28 ms (32.8725 %)
+CAT::clockable::dump: time of ' sequentiator: clean up sequences ' : 1546.33 ms (32.7889 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part B ' : 1401.96 ms (29.7277 %)
+CAT::clockable::dump: time of ' sequentiator: pick new cell ' : 1246.91 ms (26.4399 %)
+CAT::clockable::dump: time of ' sequentiator: make new sequence ' : 1222.01 ms (25.9118 %)
+CAT::clockable::dump: time of ' sequentiator: manage copy sequence ' : 845.814 ms (17.9349 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: part A ' : 812.672 ms (17.2322 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: evolve ' : 741.448 ms (15.7219 %)
+CAT::clockable::dump: time of ' sequentiator: make scenarios ' : 553.445 ms (11.7354 %)
+CAT::clockable::dump: time of ' sequentiator: can match ' : 513.75 ms (10.8937 %)
+CAT::clockable::dump: time of ' sequentiator: can add family ' : 407.332 ms (8.6372 %)
+CAT::clockable::dump: time of ' sequentiator: copy sequence ' : 159.099 ms (3.37359 %)
+CAT::clockable::dump: time of ' sequentiator: add pair ' : 158.404 ms (3.35885 %)
+CAT::clockable::dump: time of ' sequentiator: set free level ' : 156.608 ms (3.32077 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part C ' : 142.11 ms (3.01335 %)
+CAT::clockable::dump: time of ' sequentiator: copy scenario ' : 123.813 ms (2.62537 %)
+CAT::clockable::dump: time of ' sequentiator: interpret physics ' : 121.523 ms (2.57681 %)
+CAT::clockable::dump: time of ' sequentiator: copy to lfn ' : 69.953 ms (1.48331 %)
+CAT::clockable::dump: time of ' sequentiator: direct out of foil ' : 67.245 ms (1.42588 %)
+CAT::clockable::dump: time of ' sequentiator: better scenario ' : 63.014 ms (1.33617 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part B: set free level ' : 31.757 ms (0.673386 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part B: noc ' : 31.401 ms (0.665837 %)
+CAT::clockable::dump: time of ' sequentiator: calculate scenario ' : 12.301 ms (0.260834 %)
+CAT::clockable::dump: time of ' sequentiator: good first node ' : 3.498 ms (0.0741727 %)
+CAT::clockable::dump: time of ' sequentiator: make families ' : 2.303 ms (0.0488336 %)
+CAT::clockable::dump: time of ' sequentiator: evolve: part A ' : 2.151 ms (0.0456105 %)
+CAT::clockable::dump: time of ' sequentiator: get link index ' : 1.345 ms (0.0285198 %)
+CAT::clockable::dump: time of ' sequentiator: there is free sequence beginning with ' : 0.364 ms (0.00771837 %)
+CAT::clockable::dump: time of ' sequentiator: direct scenarios out of foil ' : 0.192 ms (0.00407123 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: part A: beta ' : 0.187 ms (0.00396521 %)
+CAT::clockable::dump: time of ' sequentiator: make copy sequence: part A: alpha ' : 0.175 ms (0.00371076 %)
+CAT::clockable::dump: time of ' sequentiator: finalize ' : 0 ms (0 %)
+CAT::clockable::dump: time of ' sequentiator: match gaps ' : 0 ms (0 %)
+CAT::clockable::dump: time of ' sequentiator: sequentiation ' : 0 ms (0 %)
+terminate called after throwing an instance of 'std::runtime_error'
+  what():  [void datatools::multi_properties::config::read(const string&, datatools::multi_properties&):713: Cannot open filename '/sps/nemo/scratch/ayanko/software/reco.conf' (resolved as '/sps/nemo/scratch/ayanko/software/reco.conf'!]
+/var/spool/slurmd/job661084/slurm_script: line 20: 3772124 Aborted                 (core dumped) /sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin/flreconstruct -i /sps/nemo/scratch/ayanko/kink_track_study_Anna/nf/reco.brio -p /sps/nemo/scratch/ayanko/software/reco.conf -o /sps/nemo/scratch/ayanko/kink_track_study_Anna/nf/reco2.brio
+terminate called after throwing an instance of 'std::logic_error'
+  what():  [void FLReconstruct::do_postprocess(FLReconstruct::FLReconstructParams&):668: Missing services configuration file!]
+/var/spool/slurmd/job661084/slurm_script: line 21: 3772130 Aborted                 (core dumped) /sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin/flreconstruct -i /sps/nemo/scratch/ayanko/kink_track_study_Anna/nf/reco2.brio -p /sps/nemo/scratch/ayanko/software/SNCuts/build/SNCutsPipeline.conf -o CDFiltered.brio
+****************************************************************
+*                      SLURM Batch System                      *
+*           IN2P3 Computing Centre, Villeurbanne FR            *
+****************************************************************
+Date: Wed Jul 30 11:18:23 AM CEST 2025
+Job informations can be found using these commands:
+Accounting:
+sacct -j 661084
+Efficiency:
+seff 661084
+****************************************************************
