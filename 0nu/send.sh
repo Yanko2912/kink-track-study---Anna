@@ -10,17 +10,17 @@
 #SBATCH --cpus-per-task=1                # Number of CPUs
 
 
-CONF_FAL=/sps/nemo/sw/Falaise/install_develop/share/Falaise-4.1.0/resources/snemo/demonstrator/reconstruction/ 
+FALAISE_BIN=/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin
+CONF_FAL=/sps/nemo/sw/Falaise/install_develop/share/Falaise-4.1.0/resources/snemo/demonstrator/reconstruction
+WORKDIR=/sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu
+SNCUTS_CONF=/sps/nemo/scratch/ayanko/software/SNCuts/build/SNCutsPipeline.conf
 
-/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin/flsimulate -c /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/simu_setup.conf -o /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/simu_setup.brio
+$FALAISE_BIN/flsimulate -c $WORKDIR/simu_setup.conf -o $WORKDIR/simu_setup.brio
 
-/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin/flreconstruct -i /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/simu_setup.brio -p $CONF_FAL/official-2.0.0.conf -o /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/reco.brio
+$FALAISE_BIN/flreconstruct -i $WORKDIR/simu_setup.brio -p $CONF_FAL/official-2.0.0.conf -o $WORKDIR/reco.brio
 
+$FALAISE_BIN/flreconstruct -i $WORKDIR/reco.brio -p reco.conf -o $WORKDIR/reco2.brio
 
-
-
-
-/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin/flreconstruct -i /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/reco.brio -p reco.conf -o /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/reco2.brio
-/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin/flreconstruct -i /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/reco2.brio -p /sps/nemo/scratch/ayanko/software/SNCuts/build/SNCutsPipeline.conf -o CDFiltered.brio
+$FALAISE_BIN/flreconstruct -i $WORKDIR/reco2.brio -p $SNCUTS_CONF -o $WORKDIR/CDFiltered.brio
 # /sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin/flreconstruct -i /pbs/home/a/ayanko/hihihaha/pb/Reco_pb1000.brio -p /pbs/home/a/ayanko/private/MiModule/p_MiModule_v00.conf
 
