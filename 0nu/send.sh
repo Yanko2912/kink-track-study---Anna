@@ -9,13 +9,18 @@
 #SBATCH --time=50:00                 	 # Time for the job in format “minutes:seconds” or  “hours:minutes:seconds”, “days-hours”
 #SBATCH --cpus-per-task=1                # Number of CPUs
 
+ID=$1
+
 source ${THRONG_DIR}/config/supernemo_profile.bash
 snswmgr_load_setup falaise@5.1.5
 
 FALAISE_BIN=/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin
 CONF_FAL=/sps/nemo/sw/Falaise/install_develop/share/Falaise-4.1.0/resources/snemo/demonstrator/reconstruction
-WORKDIR=/sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu
+WORKDIR=/sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/DATA/${ID}
+
 SNCUTS_CONF=/sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/
+
+mkdir -p "$WORKDIR"
 
 $FALAISE_BIN/flsimulate -c $WORKDIR/simu_setup.conf -o $WORKDIR/simu.brio
 
@@ -23,6 +28,6 @@ $FALAISE_BIN/flsimulate -c $WORKDIR/simu_setup.conf -o $WORKDIR/simu.brio
 
 $FALAISE_BIN/flreconstruct -i $WORKDIR/simu.brio -p reco.conf -o $WORKDIR/reco.brio
 
-#$FALAISE_BIN/flreconstruct -i $WORKDIR/reco.brio -p $WORKDIR/SNCutsPipeline.conf -o $WORKDIR/reco_cuts.brio
+$FALAISE_BIN/flreconstruct -i $WORKDIR/reco.brio -p /sps/nemo/scratch/ayanko/software/SNCuts/SNCutsPipeline.conf.in -o $WORKDIR/reco_cuts.brio
 # /sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin/flreconstruct -i /pbs/home/a/ayanko/hihihaha/pb/Reco_pb1000.brio -p /pbs/home/a/ayanko/private/MiModule/p_MiModule_v00.conf
 
