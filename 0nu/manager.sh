@@ -14,7 +14,12 @@ for ((i = start; i <= end; i++)); do
   cp simu_setup.conf  "DATA/$i/"
   cp reco.conf        "DATA/$i/"
   cp pipeline.conf    "DATA/$i/"
+  cp SNCutsPipeline.conf "DATA/$i/"
+
   sbatch \
     --output="DATA/$i/slurm-%j.out" \
-    send.sh "$i"
+    send_simu.sh "$i"
+  sbatch \
+    --output="DATA/$i/slurm-%j.out" \
+    send_cuts.sh "$i"
 done

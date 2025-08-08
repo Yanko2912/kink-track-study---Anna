@@ -1,0 +1,127 @@
+**********************************************************************
+*                         SLURM Batch System                         *
+*              IN2P3 Computing Centre, Villeurbanne FR               *
+**********************************************************************
+* Date:                 Fri Aug  8 04:09:02 PM CEST 2025
+* Job name:             0nubb_Se82_10p2eve_single_job
+* Job id:               1420586
+* User:                 ayanko
+* Account:              nemo
+* Submit host:          cca020
+* Partition:            htc
+* Quality of service:   normal
+* Nodelist:             ccwslurm0036
+* Operating System:     Red Hat Enterprise Linux release 9.6 (Plow)
+* Architecture:         x86_64
+**********************************************************************
+[log] Entering SuperNEMO software common profile...
+[log] SuperNEMO software common profile is already loaded.
+[log] Exiting SuperNEMO software common profile...
+[log] load_core_pro_setup: RedHat Linux Version : 9.6
+[log] load_core_pro_setup: PATH starts from : /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+[log] load_core_pro_setup: LD_LIBRARY_PATH starts from : 
+[log] load_core_pro_setup: PKG_CONFIG_PATH starts from : 
+[log] load_core_pro_setup: Activating Modules...
+[log] Activating 'Modules'...
+[log] Modules Release 5.1.1 (2022-05-31) is activated
+[log] load_core_pro_setup: PATH is : /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+[log] load_git_2_44_0_setup: Setting git 2.44.0...
+[log] load_git_2_44_0_setup: Using git from Modules...
+[log] load_git_2_44_0_setup: PATH = /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+[log] load_git_2_44_0_setup: Updated PATH = /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+/pbs/software/redhat-9-x86_64/git/2.44.0/bin/git
+[log] load_git_2_44_0_setup: Using Modules git 2.44.0...
+[log] load_git_2_44_0_setup: git version 2.44.0 is setup.
+[log] load_gcc_11_setup: Setting gcc 11...
+[log] load_gcc_11_setup: Using system gcc 11...
+[log] load_gcc_11_setup: CC : /usr/bin/gcc
+[log] load_gcc_11_setup: CXX : /usr/bin/g++
+[log] load_gcc_11_setup: gcc version 11 is setup.
+[log] load_ninja_1_12_1_setup: Setting ninja 1.12.1...
+[log] load_ninja_1_12_1_setup: Updated PATH = /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+[log] load_ninja_1_12_1_setup: ninja version 1.12.1 is setup.
+[log] load_cmake_3_29_2_setup: Setting cmake 3.29.2...
+[log] load_cmake_3_29_2_setup: Updated PATH = /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+[log] load_cmake_3_29_2_setup: Using Modules cmake 3.29.2...
+[log] load_cmake_3_29_2_setup: cmake version 3.29.2 is setup.
+[log] load_python3_3_12_2_setup: Setting python3 3.12.2...
+[log] load_python3_3_12_2_setup: updated from module LD_LIBRARY_PATH=''
+[log] load_python3_3_12_2_setup: updated LD_LIBRARY_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib'
+[log] load_python3_3_12_2_setup: updated PKG_CONFIG_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib/pkgconfig'
+[log] load_python3_3_12_2_setup: Using Modules python3 3.12.2...
+[log] load_python3_3_12_2_setup: python3 version 3.12.2 is setup.
+[log] load_doxygen_1_9_1_setup: Setting Doxygen 1.9.1...
+[log] load_doxygen_1_9_1_setup: Using system Doxygen 1.9.1...
+[log] load_gnuplot_5_4_3_setup: Setting gnuplot 5.4.3...
+[log] load_gnuplot_5_4_3_setup: old LD_LIBRARY_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib'
+[log] load_gnuplot_5_4_3_setup: gnuplot 5.4.3 loaded from Modules...
+[log] load_gnuplot_5_4_3_setup: Updated PATH = /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+[log] load_gnuplot_5_4_3_setup: Updated LD_LIBRARY_PATH = /pbs/software/redhat-9-x86_64/python/3.12.2/lib
+[log] load_gnuplot_5_4_3_setup: Using Modules gnuplot 5.4.3...
+[log] load_gnuplot_5_4_3_setup: gnuplot version 5.4.3 is setup.
+[log] load_bxinstallers_2024_11_20_setup: old LD_LIBRARY_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib'
+[log] load_bxinstallers_2024_11_20_setup: bxinstallers install base dir: /sps/nemo/sw/redhat-9-x86_64/snsw/opt2
+[log] load_bxinstallers_2024_11_20_setup: bxinstallers config dir: /sps/nemo/sw/redhat-9-x86_64/snsw/config
+[log] load_bxinstallers_2024_11_20_setup: bxinstallers version 2024-11-20 is setup.
+[log] load_gsl_2_6_setup: Setting gsl 2.6...
+[log] load_gsl_2_6_setup: old LD_LIBRARY_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib'
+[log] load_gsl_2_6_setup: Using system gsl 2.6...
+[log] load_gsl_2_6_setup: gsl version 2.6 is setup.
+[log] load_camp_0_8_4b_setup: Setting camp 0.8.4b...
+[log] load_camp_0_8_4b_setup: old LD_LIBRARY_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib'
+[warning] load_camp_0_8_4b_setup : camp version 0.8.4b is already setup!
+[log] load_boost_1_75_0b_setup: Setting boost 1.75.0b...
+[log] load_boost_1_75_0b_setup: old LD_LIBRARY_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib'
+[log] new LD_LIBRARY_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib'
+[log] load_boost_1_75_0b_setup: boost version 1.75.0b is setup.
+[log] load_boost_1_75_0b_setup: Using system boost 1.75.0b...
+[log] load_boost_1_75_0b_setup: boost version 1.75.0b is setup.
+[log] load_clhep_2_1_4_2b_setup: Setting clhep 2.1.4.2b...
+[warning] load_clhep_2_1_4_2b_setup : clhep version 2.1.4.2b is already setup!
+[log] load_xercesc_3_2_5_setup: Setting xercesc 3.2.5...
+[log] load_xercesc_3_2_5_setup: xercesc version 3.2.5 is setup.
+[log] load_xercesc_3_2_5_setup: Updated PATH : /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+[log] load_xercesc_3_2_5_setup: Updated LD_LIBRARY_PATH : /pbs/software/redhat-9-x86_64/python/3.12.2/lib
+[log] load_xercesc_3_2_5_setup: Updated PKG_CONFIG_PATH : /pbs/software/redhat-9-x86_64/xerces/3.2.5/lib64/pkgconfig:/pbs/software/redhat-9-x86_64/python/3.12.2/lib/pkgconfig
+[warning] load_g4datasets_9_6_4b_setup : g4datasets version 9.6.4b is already setup !
+[log] load_qt5_5_15_9_setup: Setting qt5 5.15.9...
+[log] load_qt5_5_15_9_setup: qt5 version 5.15.9 can be located using pkg-config.
+[log] load_qt5_5_15_9_setup: qt5 version 5.15.9 is setup.
+[log] load_geant4_9_6_4b_setup: Setting geant4 9.6.4b...
+[warning] load_geant4_9_6_4b_setup : geant4 version 9.6.4b is already setup !
+[log] load_root_6_26_06b_setup: Setting root 6.26.06b...
+[warning] load_root_6_26_06b_setup : root version 6.26.06b is already setup!
+[log] load_bxdecay0data_1_0_1_setup : Setting bxdecay0data 1.0.1...
+[log] load_bxdecay0data_1_0_1_setup : Path to the bxdecay0data 'DBD gA' dataset : '/sps/nemo/sw/redhat-9-x86_64/snsw/data/bxdecay0data-1.0.1/processes/dbd_gA'
+[log] load_bxdecay0data_1_0_1_setup : bxdecay0data version 1.0.1 is setup.
+[log] load_bxdecay0_1_1_2b_setup : Setting bxdecay0 1.1.2b...
+[log] load_bxdecay0_1_1_2b_setup : Path to the bxdecay0 'DBD gA' dataset is defined.
+[warning] load_bxdecay0_1_1_2b_setup : bxdecay0 version 1.1.2b is already setup !
+[log] load_bayeux_3_5_5c_setup: Setting bayeux 3.5.5c...
+[warning] load_bayeux_3_5_5c_setup : bayeux version 3.5.5c is already setup!
+[log] load_mariadb_connc_3_4_5_setup: Setting mariadb_connc 3.4.5...
+[warning] load_mariadb_connc_3_4_5_setup : mariadb_connc version 3.4.5 is already setup!
+[log] load_mariadb_conncpp_1_1_7-fmauger-1_setup: Setting mariadb_conncpp 1.1.7-fmauger-1...
+[warning] load_mariadb_conncpp_1_1_7-fmauger-1_setup : mariadb_conncpp version 1.1.7-fmauger-1 is already setup!
+[log] load_sncabling_1_1_2_setup: Setting sncabling 1.1.2...
+[warning] load_sncabling_1_1_2_setup : sncabling version 1.1.2 is already setup!
+[log] load_snrs_1_1_1_setup: Setting snrs 1.1.1...
+[warning] load_snrs_1_1_1_setup : snrs version 1.1.1 is already setup!
+[log] load_snfee_1_1_1_setup: Setting snfee 1.1.1...
+[warning] load_snfee_1_1_1_setup : snfee version 1.1.1 is already setup!
+[log] load_falaise_5_1_5_setup: Setting falaise 5.1.5...
+[warning] load_falaise_5_1_5_setup : falaise version 5.1.5 is already setup!
+terminate called after throwing an instance of 'std::logic_error'
+  what():  [void FLReconstruct::do_postprocess(FLReconstruct::FLReconstructParams&):668: Missing services configuration file!]
+/var/spool/slurmd/job1420586/slurm_script: line 22: 4142442 Aborted                 (core dumped) $FALAISE_BIN/flreconstruct -i $WORKDIR/reco.brio -p /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/SNCutsPipeline.conf -o $WORKDIR/reco_cuts.brio
+****************************************************************
+*                      SLURM Batch System                      *
+*           IN2P3 Computing Centre, Villeurbanne FR            *
+****************************************************************
+Date: Fri Aug  8 04:09:07 PM CEST 2025
+Job informations can be found using these commands:
+Accounting:
+sacct -j 1420586
+Efficiency:
+seff 1420586
+****************************************************************
