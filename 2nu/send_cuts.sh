@@ -16,8 +16,8 @@ snswmgr_load_setup falaise@5.1.5
 
 i=$1
 
-WORKDIR=/sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/DATA/$i
+WORKDIR=/sps/nemo/scratch/ayanko/kink_track_study_Anna/2nu/DATA/$i
 FALAISE_BIN=/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin
-SNCUTS_CONF=/sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/
+SNCUTS_CONF=/sps/nemo/scratch/ayanko/kink_track_study_Anna/2nu/
 
-$FALAISE_BIN/flreconstruct -i $WORKDIR/reco.brio -p /sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/SNCutsPipeline.conf -o $WORKDIR/reco_cuts.brio
+$FALAISE_BIN/flreconstruct -i $WORKDIR/reco.brio -p /sps/nemo/scratch/ayanko/kink_track_study_Anna/2nu/SNCutsPipeline.conf -o $WORKDIR/reco_cuts.brio
