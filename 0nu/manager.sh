@@ -26,6 +26,7 @@ for ((i = start; i <= end; i++)); do
   cp reco.conf           "$d/"
   cp pipeline.conf       "$d/"
   cp SNCutsPipeline.conf "$d/"
+  cp simu_setup.conf "$d/"
 
   sbatch --output="$d/slurm-%j.out" "$job" "$i"
 done

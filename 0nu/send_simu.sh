@@ -2,11 +2,11 @@
 
 # SLURM options:
 
-#SBATCH --job-name=0nubb_Se82_10p2eve_single_job         	 # Job name
-#SBATCH --mem=10G                     	 # RAM
+#SBATCH --job-name=0nu_10p2eve_single_job         	 # Job name
+#SBATCH --mem=40G                     	 # RAM
 #SBATCH --licenses=sps                   # When working on sps, must declare license!!
 
-#SBATCH --time=50:00                 	 # Time for the job in format “minutes:seconds” or  “hours:minutes:seconds”, “days-hours”
+#SBATCH --time=24:00:00                	 # Time for the job in format “minutes:seconds” or  “hours:minutes:seconds”, “days-hours”
 #SBATCH --cpus-per-task=1                # Number of CPUs
 
 
@@ -22,3 +22,4 @@ WORKDIR=/sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/DATA/$i
 $FALAISE_BIN/flsimulate -c $WORKDIR/simu_setup.conf -o $WORKDIR/simu.brio
 
 $FALAISE_BIN/flreconstruct -i $WORKDIR/simu.brio -p reco.conf -o $WORKDIR/reco.brio
+rm -f "$WORKDIR/simu.brio"

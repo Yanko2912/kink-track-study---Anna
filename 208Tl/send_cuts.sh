@@ -6,7 +6,7 @@
 #SBATCH --mem=10G                     	 # RAM
 #SBATCH --licenses=sps                   # When working on sps, must declare license!!
 
-#SBATCH --time=50:00                 	 # Time for the job in format “minutes:seconds” or  “hours:minutes:seconds”, “days-hours”
+#SBATCH --time=24:00:00                 	 # Time for the job in format “minutes:seconds” or  “hours:minutes:seconds”, “days-hours”
 #SBATCH --cpus-per-task=1                # Number of CPUs
 
 
@@ -16,8 +16,8 @@ snswmgr_load_setup falaise@5.1.5
 
 i=$1
 
-WORKDIR=/sps/nemo/scratch/ayanko/kink_track_study_Anna/208Ti/DATA/$i
+WORKDIR=/sps/nemo/scratch/ayanko/kink_track_study_Anna/208Tl/DATA/$i
 FALAISE_BIN=/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin
-SNCUTS_CONF=/sps/nemo/scratch/ayanko/kink_track_study_Anna/208Ti/
+SNCUTS_CONF=/sps/nemo/scratch/ayanko/kink_track_study_Anna/208Tl/
 
-$FALAISE_BIN/flreconstruct -i $WORKDIR/reco.brio -p /sps/nemo/scratch/ayanko/kink_track_study_Anna/208Ti/SNCutsPipeline.conf -o $WORKDIR/reco_cuts.brio
+$FALAISE_BIN/flreconstruct -i $WORKDIR/reco.brio -p /sps/nemo/scratch/ayanko/kink_track_study_Anna/208Tl/SNCutsPipeline.conf -o $WORKDIR/reco_cuts.brio

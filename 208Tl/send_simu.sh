@@ -2,11 +2,11 @@
 
 # SLURM options:
 
-#SBATCH --job-name=214Bi_10p2eve_single_job         	 # Job name
+#SBATCH --job-name=208Tl_10p2eve_single_job         	 # Job name
 #SBATCH --mem=40G                     	 # RAM
 #SBATCH --licenses=sps                   # When working on sps, must declare license!!
 
-#SBATCH --time=24:00:00               	 # Time for the job in format “minutes:seconds” or  “hours:minutes:seconds”, “days-hours”
+#SBATCH --time=24:00:00                	 # Time for the job in format “minutes:seconds” or  “hours:minutes:seconds”, “days-hours”
 #SBATCH --cpus-per-task=1                # Number of CPUs
 
 
@@ -17,7 +17,7 @@ snswmgr_load_setup falaise@5.1.5
 i=$1
 
 FALAISE_BIN=/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin
-WORKDIR=/sps/nemo/scratch/ayanko/kink_track_study_Anna/214Bi/DATA/$i
+WORKDIR=/sps/nemo/scratch/ayanko/kink_track_study_Anna/208Tl/DATA/$i
 
 $FALAISE_BIN/flsimulate -c $WORKDIR/simu_setup.conf -o $WORKDIR/simu.brio
 
