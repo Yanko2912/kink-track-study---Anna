@@ -2,6 +2,7 @@
 set -euo pipefail
 
 
+
 if [ "$#" -ne 3 ]; then
   exit 1
 fi
@@ -16,17 +17,28 @@ case "$sel" in
   *) exit 2 ;;
 esac
 
+SRC_DIR="/sps/nemo/scratch/ayanko/kink_track_study_Anna/208Tl"
+
 mkdir -p DATA
 
 for ((i = start; i <= end; i++)); do
   d="DATA/$i"
   mkdir -p "$d"
 
-  cp simu_setup.conf     "$d/"
-  cp reco.conf           "$d/"
-  cp pipeline.conf       "$d/"
-  cp SNCutsPipeline.conf "$d/"
-  cp simu_setup.conf "$d/"
-  sbatch --output="$d/slurm-%j.out" "$job" "$i"
-done
+  if [ "$job" = "send_simu.sh" ]; then
+    cp "$SRC_DIR/simu_setup.conf" "$d/"
+    cp "$SRC_DIR/simu.profile"   "$d/"
+    cp "$SRC_DIR/reco.conf"       "$d/"
+    cp "$SRC_DIR/pipeline.conf"   "$d/"
+  fi
 
+ 
+  if [ "$job" = "send_cuts.sh" ]; then
+    cp "$SRC_DIR/SNCutsPipelineTEST.conf" "$d/"
+  fi
+
+  (
+    cd "$d" || exit 3
+    sbatch --output="slurm-%j.out" "../../$job" "$i"
+  )
+done
