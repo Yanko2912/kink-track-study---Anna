@@ -1,23 +1,37 @@
-#!/bin/sh
+#!/bin/bash
 
-# SLURM options:
-
-#SBATCH --job-name=0nubb_Se82_10p2eve_single_job         	 # Job name
-#SBATCH --mem=10G                     	 # RAM
-#SBATCH --licenses=sps                   # When working on sps, must declare license!!
-
-#SBATCH --time=24:00:00                 	 # Time for the job in format “minutes:seconds” or  “hours:minutes:seconds”, “days-hours”
-#SBATCH --cpus-per-task=1                # Number of CPUs
+# ===== SLURM options =====
+#SBATCH --job-name=208Tl
+#SBATCH --mem=5G
+#SBATCH --licenses=sps
+#SBATCH --time=12:00:00
+#SBATCH --cpus-per-task=1
 
 
 
-source ${THRONG_DIR}/config/supernemo_profile.bash
+source "${THRONG_DIR}/config/supernemo_profile.bash"
 snswmgr_load_setup falaise@5.1.5
+
 
 i=$1
 
-WORKDIR=/sps/nemo/scratch/ayanko/kink_track_study_Anna/208Tl/DATA/$i
-FALAISE_BIN=/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin
-SNCUTS_CONF=/sps/nemo/scratch/ayanko/kink_track_study_Anna/208Tl/
 
-$FALAISE_BIN/flreconstruct -i $WORKDIR/reco.brio -p /sps/nemo/scratch/ayanko/kink_track_study_Anna/208Tl/SNCutsPipelineTEST.conf -o $WORKDIR/reco_cuts.brio
+SNCUTS_CONF="/sps/nemo/scratch/ayanko/kink_track_study_Anna/208Tl"
+WORKDIR="${SNCUTS_CONF}/DATA/${i}"
+FALAISE_BIN="/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin"
+MYDIRKK="${WORKDIR}/cutsKK"
+MYDIRSS="${WORKDIR}/cutsSS"
+MYDIRSK="${WORKDIR}/cutsSK"
+
+INPUT="${WORKDIR}/reco.brio"
+
+
+mkdir -p "${MYDIRKK}" "${MYDIRSS}" "${MYDIRSK}"
+
+# ===== Run three cut pipelines =====
+cd $MYDIRKK 
+"${FALAISE_BIN}/flreconstruct" -i "${INPUT}" -p "${SNCUTS_CONF}/SNCutsPipelineKK.conf" -o "${MYDIRKK}/reco_cutsKK.brio"
+cd $MYDIRSS
+"${FALAISE_BIN}/flreconstruct" -i "${INPUT}" -p "${SNCUTS_CONF}/SNCutsPipelineSS.conf" -o "${MYDIRSS}/reco_cutsSS.brio"
+cd $MYDIRSK
+"${FALAISE_BIN}/flreconstruct" -i "${INPUT}" -p "${SNCUTS_CONF}/SNCutsPipelineSK.conf" -o "${MYDIRSK}/reco_cutsSK.brio"

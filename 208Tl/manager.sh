@@ -34,7 +34,9 @@ for ((i = start; i <= end; i++)); do
 
  
   if [ "$job" = "send_cuts.sh" ]; then
-    cp "$SRC_DIR/SNCutsPipelineTEST.conf" "$d/"
+    cp "$SRC_DIR/SNCutsPipelineKK.conf" "$d/"
+ cp "$SRC_DIR/SNCutsPipelineSS.conf" "$d/"
+ cp "$SRC_DIR/SNCutsPipelineSK.conf" "$d/"
   fi
 
   (

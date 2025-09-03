@@ -17,7 +17,7 @@ case "$sel" in
   *) exit 2 ;;
 esac
 
-SRC_DIR="/sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu/"
+SRC_DIR="/sps/nemo/scratch/ayanko/kink_track_study_Anna/0nu"
 
 mkdir -p DATA
 
@@ -34,7 +34,9 @@ for ((i = start; i <= end; i++)); do
 
  
   if [ "$job" = "send_cuts.sh" ]; then
-    cp "$SRC_DIR/SNCutsPipelineTEST.conf" "$d/"
+    cp "$SRC_DIR/SNCutsPipelineKK.conf" "$d/"
+    cp "$SRC_DIR/SNCutsPipelineSS.conf" "$d/"
+    cp "$SRC_DIR/SNCutsPipelineSK.conf" "$d/"
   fi
 
   (

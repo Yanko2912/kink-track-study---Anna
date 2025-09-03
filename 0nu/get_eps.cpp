@@ -1,65 +1,116 @@
+#include "../../software/MiModule/include/MiEvent.h"
+#include "../../software/MiModule/include/MiVertex.h"
+#include "../../software/MiModule/include/MiVector3D.h"
+#include "../../software/MiModule/include/MiPTD.h"
+#include "../../software/MiModule/include/MiSDCaloHit.h"
+
+#include <TFile.h>
+#include <TTree.h>
+#include <TSystem.h>
+#include <TString.h>
+#include <TClonesArray.h>
+#include <TH1F.h>
+
+#include <vector>
 #include <iostream>
-#include <fstream>
-#include <iomanip>
 
-#include "TFile.h"
-#include "TTree.h"
-#include "TSystem.h"
-#include "TString.h"
+R__LOAD_LIBRARY(../../software/MiModule/lib/libMiModule.so)
 
-void get_eps(const char* base_dir = ".", Long64_t total_events = 200000) {
-   
-    TString search_dir = base_dir;
-    {
-        TString candidate = TString::Format("%s/DATA", base_dir);
-        if (!gSystem->AccessPathName(candidate, kFileExists)) {
-            search_dir = candidate; 
-        }
+// ?????? ????? ????? ?? ??????? MiSDCaloHit (TClonesArray)
+static const char* kHitBranches[] = {
+  "SDCaloHit", "SDCaloHits", "CaloSDHits", "MiSDCaloHit"
+};
+
+// ????? ????/????? (AccessPathName==0 -> ?????)
+static inline bool Exists(const TString& p) { return !gSystem->AccessPathName(p, kFileExists); }
+
+// ?? ???????????
+static bool IsDir(const TString& path) {
+  void* d = gSystem->OpenDirectory(path);
+  if (d) { gSystem->FreeDirectory(d); return true; }
+  return false;
+}
+
+// ?????????? ??????? ??? ????? ".../Default.root", ????????? ? dir
+static void CollectDefaultsRec(const TString& dir, std::vector<TString>& out) {
+  // ???? ? ???????? ???? ? Default.root ? ??????
+  TString here = TString::Format("%s/Default.root", dir.Data());
+  if (Exists(here)) out.push_back(here);
+
+  // ???????? ?? ????????
+  void* d = gSystem->OpenDirectory(dir);
+  if (!d) return;
+  const char* ent = nullptr;
+  while ((ent = gSystem->GetDirEntry(d))) {
+    if (!ent || ent[0]=='.') continue;
+    TString sub = TString::Format("%s/%s", dir.Data(), ent);
+    if (!IsDir(sub)) continue;
+    CollectDefaultsRec(sub, out); // ????????
+  }
+  gSystem->FreeDirectory(d);
+}
+
+// -----------------------------------------------------------------------------
+// ??????: root -l get_eps.C   (? ???? DATA)
+// -----------------------------------------------------------------------------
+void get_eps() {
+  const TString start_dir = ".";  // ???????? ? ???????? ???? (DATA)
+  const int     nbins     = 200;
+  const double  xmin      = 0.0;
+  const double  xmax      = 5.0;
+
+  // 1) ??????? ??? Default.root ??????????
+  std::vector<TString> files;
+  CollectDefaultsRec(start_dir, files);
+
+  if (files.empty()) {
+    std::cout << "[INFO] No Default.root found under .  (nothing to do)\n";
+    return;
+  }
+  std::cout << "[INFO] Using " << files.size() << " file(s) with Default.root\n";
+
+  // 2) ?????????? ??????? SD-????-?????
+  TH1F hE("hE", "SD Calo hit energy;E;Counts", nbins, xmin, xmax);
+  hE.Sumw2();
+
+  // 3) ???????? ?????? ????????? ????; ???? ???? ???????? ? ?????? ??????????
+  for (const auto& path : files) {
+    TFile f(path, "READ");
+    if (f.IsZombie()) continue;
+
+    TTree* t = (TTree*) f.Get("Event");
+    if (!t) continue;
+
+    // ?????? ????? ? TClonesArray<MiSDCaloHit>
+    TClonesArray* hits = nullptr;
+    const char* usedBranch = nullptr;
+    for (const char* bname : kHitBranches) {
+      if (!t->GetBranch(bname)) continue;
+      if (t->SetBranchAddress(bname, &hits) == 0) { usedBranch = bname; break; }
     }
+    if (!usedBranch) continue; // ????? ????????? ????? ? ??????????? ????
 
-
-    TString table_path = TString::Format("%s/efficiencies.txt", search_dir.Data());
-    gSystem->Unlink(table_path);
-
-    auto write_one = [&](const TString& rootpath, const TString& outpath) {
-        TFile f(rootpath, "READ");
-        if (f.IsZombie()) return;
-        TTree* s = (TTree*) f.Get("Event");
-        if (!s) return;
-
-        Long64_t N = s->GetEntries();
-        double eps = (total_events > 0) ? 100.0 * double(N) / double(total_events) : 0.0;
-        (void)eps;
-
-        TString dir    = gSystem->DirName(rootpath.Data());
-        TString folder = gSystem->BaseName(dir.Data());
-
-        std::ofstream out(outpath.Data(), std::ios::app);
-        if (!out) { std::cerr << "[ERR] cannot write " << outpath << "\n"; return; }
-        out << folder << "\t" << N << "\n";
-        out.close();
-
-        std::cout << "[OK] " << rootpath << " -> " << outpath
-                  << "  (folder=" << folder << ", N=" << N << ")\n";
-    };
-
-    {
-        TString root0 = TString::Format("%s/Default.root", search_dir.Data());
-        if (!gSystem->AccessPathName(root0, kFileExists)) {
-            write_one(root0, table_path);
-        }
+    // ??????? ????? ? ?????? ?????????? getE()
+    Long64_t N = t->GetEntries();
+    for (Long64_t i = 0; i < N; ++i) {
+      t->GetEntry(i);
+      if (!hits) continue;
+      const int nh = hits->GetEntriesFast();
+      for (int j = 0; j < nh; ++j) {
+        auto* hit = static_cast<MiSDCaloHit*>(hits->UncheckedAt(j));
+        if (!hit) continue;
+        hE.Fill(hit->getE());
+      }
     }
+  }
 
-   
-    void* dirp = gSystem->OpenDirectory(search_dir.Data());
-    if (!dirp) { std::cerr << "[ERR] cannot open dir " << search_dir << "\n"; return; }
+  // 4) ???????? ????????? ? ??????? ???? (DATA)
+  TFile fout("energy_hist.root", "RECREATE");
+  hE.Write();
+  fout.Close();
 
-    const char* ent = nullptr;
-    while ((ent = gSystem->GetDirEntry(dirp))) {
-        if (!ent || ent[0] == '.') continue;
-        TString rootpath = TString::Format("%s/%s/Default.root", search_dir.Data(), ent);
-        if (gSystem->AccessPathName(rootpath, kFileExists)) continue;
-        write_one(rootpath, table_path);
-    }
-    gSystem->FreeDirectory(dirp);
+  std::cout << "[DONE] Saved ./energy_hist.root\n"
+            << "[STATS] Entries=" << hE.GetEntries()
+            << "  Mean=" << hE.GetMean()
+            << "  RMS="  << hE.GetRMS() << "\n";
 }
