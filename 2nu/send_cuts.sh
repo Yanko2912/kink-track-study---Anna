@@ -2,7 +2,7 @@
 
 # ===== SLURM options =====
 #SBATCH --job-name=2nu
-#SBATCH --mem=1G
+#SBATCH --mem=700M
 #SBATCH --licenses=sps
 #SBATCH --time=02:00:00
 #SBATCH --cpus-per-task=1

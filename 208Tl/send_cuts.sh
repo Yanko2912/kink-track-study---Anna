@@ -2,9 +2,9 @@
 
 # ===== SLURM options =====
 #SBATCH --job-name=208Tl
-#SBATCH --mem=5G
+#SBATCH --mem=600M
 #SBATCH --licenses=sps
-#SBATCH --time=12:00:00
+#SBATCH --time=06:00:00
 #SBATCH --cpus-per-task=1
 
 

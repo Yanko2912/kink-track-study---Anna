@@ -1,0 +1,450 @@
+**********************************************************************
+*                         SLURM Batch System                         *
+*              IN2P3 Computing Centre, Villeurbanne FR               *
+**********************************************************************
+* Date:                 Tue Sep  9 10:42:14 AM CEST 2025
+* Job name:             214Bieps
+* Job id:               4223754
+* User:                 ayanko
+* Account:              nemo
+* Submit host:          cca014
+* Partition:            htc
+* Quality of service:   normal
+* Nodelist:             ccwslurm0053
+* Operating System:     Red Hat Enterprise Linux release 9.6 (Plow)
+* Architecture:         x86_64
+**********************************************************************
+[log] Entering SuperNEMO software common profile...
+[log] SuperNEMO software common profile is already loaded.
+[log] Exiting SuperNEMO software common profile...
+[log] load_core_pro_setup: RedHat Linux Version : 9.6
+[log] load_core_pro_setup: PATH starts from : /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+[log] load_core_pro_setup: LD_LIBRARY_PATH starts from : 
+[log] load_core_pro_setup: PKG_CONFIG_PATH starts from : 
+[log] load_core_pro_setup: Activating Modules...
+[log] Activating 'Modules'...
+[log] Modules Release 5.1.1 (2022-05-31) is activated
+[log] load_core_pro_setup: PATH is : /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+[log] load_git_2_44_0_setup: Setting git 2.44.0...
+[log] load_git_2_44_0_setup: Using git from Modules...
+[log] load_git_2_44_0_setup: PATH = /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+[log] load_git_2_44_0_setup: Updated PATH = /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+/pbs/software/redhat-9-x86_64/git/2.44.0/bin/git
+[log] load_git_2_44_0_setup: Using Modules git 2.44.0...
+[log] load_git_2_44_0_setup: git version 2.44.0 is setup.
+[log] load_gcc_11_setup: Setting gcc 11...
+[log] load_gcc_11_setup: Using system gcc 11...
+[log] load_gcc_11_setup: CC : /usr/bin/gcc
+[log] load_gcc_11_setup: CXX : /usr/bin/g++
+[log] load_gcc_11_setup: gcc version 11 is setup.
+[log] load_ninja_1_12_1_setup: Setting ninja 1.12.1...
+[log] load_ninja_1_12_1_setup: Updated PATH = /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+[log] load_ninja_1_12_1_setup: ninja version 1.12.1 is setup.
+[log] load_cmake_3_29_2_setup: Setting cmake 3.29.2...
+[log] load_cmake_3_29_2_setup: Updated PATH = /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+[log] load_cmake_3_29_2_setup: Using Modules cmake 3.29.2...
+[log] load_cmake_3_29_2_setup: cmake version 3.29.2 is setup.
+[log] load_python3_3_12_2_setup: Setting python3 3.12.2...
+[log] load_python3_3_12_2_setup: updated from module LD_LIBRARY_PATH=''
+[log] load_python3_3_12_2_setup: updated LD_LIBRARY_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib'
+[log] load_python3_3_12_2_setup: updated PKG_CONFIG_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib/pkgconfig'
+[log] load_python3_3_12_2_setup: Using Modules python3 3.12.2...
+[log] load_python3_3_12_2_setup: python3 version 3.12.2 is setup.
+[log] load_doxygen_1_9_1_setup: Setting Doxygen 1.9.1...
+[log] load_doxygen_1_9_1_setup: Using system Doxygen 1.9.1...
+[log] load_gnuplot_5_4_3_setup: Setting gnuplot 5.4.3...
+[log] load_gnuplot_5_4_3_setup: old LD_LIBRARY_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib'
+[log] load_gnuplot_5_4_3_setup: gnuplot 5.4.3 loaded from Modules...
+[log] load_gnuplot_5_4_3_setup: Updated PATH = /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+[log] load_gnuplot_5_4_3_setup: Updated LD_LIBRARY_PATH = /pbs/software/redhat-9-x86_64/python/3.12.2/lib
+[log] load_gnuplot_5_4_3_setup: Using Modules gnuplot 5.4.3...
+[log] load_gnuplot_5_4_3_setup: gnuplot version 5.4.3 is setup.
+[log] load_bxinstallers_2024_11_20_setup: old LD_LIBRARY_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib'
+[log] load_bxinstallers_2024_11_20_setup: bxinstallers install base dir: /sps/nemo/sw/redhat-9-x86_64/snsw/opt2
+[log] load_bxinstallers_2024_11_20_setup: bxinstallers config dir: /sps/nemo/sw/redhat-9-x86_64/snsw/config
+[log] load_bxinstallers_2024_11_20_setup: bxinstallers version 2024-11-20 is setup.
+[log] load_gsl_2_6_setup: Setting gsl 2.6...
+[log] load_gsl_2_6_setup: old LD_LIBRARY_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib'
+[log] load_gsl_2_6_setup: Using system gsl 2.6...
+[log] load_gsl_2_6_setup: gsl version 2.6 is setup.
+[log] load_camp_0_8_4b_setup: Setting camp 0.8.4b...
+[log] load_camp_0_8_4b_setup: old LD_LIBRARY_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib'
+[warning] load_camp_0_8_4b_setup : camp version 0.8.4b is already setup!
+[log] load_boost_1_75_0b_setup: Setting boost 1.75.0b...
+[log] load_boost_1_75_0b_setup: old LD_LIBRARY_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib'
+[log] new LD_LIBRARY_PATH='/pbs/software/redhat-9-x86_64/python/3.12.2/lib'
+[log] load_boost_1_75_0b_setup: boost version 1.75.0b is setup.
+[log] load_boost_1_75_0b_setup: Using system boost 1.75.0b...
+[log] load_boost_1_75_0b_setup: boost version 1.75.0b is setup.
+[log] load_clhep_2_1_4_2b_setup: Setting clhep 2.1.4.2b...
+[warning] load_clhep_2_1_4_2b_setup : clhep version 2.1.4.2b is already setup!
+[log] load_xercesc_3_2_5_setup: Setting xercesc 3.2.5...
+[log] load_xercesc_3_2_5_setup: xercesc version 3.2.5 is setup.
+[log] load_xercesc_3_2_5_setup: Updated PATH : /sps/nemo/sw/redhat-9-x86_64/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/falaise-5.1.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snfee-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/snrs-1.1.1/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/sncabling-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/mariadb_connc-3.4.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bayeux-3.5.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/bxdecay0-1.1.2/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/root-6.26.06/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/geant4-9.6.4/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/g4datasets-9.6.4/bin:/pbs/software/redhat-9-x86_64/xerces/3.2.5/bin:/sps/nemo/sw/redhat-9-x86_64/snsw/opt2/clhep-2.1.4.2/bin:/pbs/software/redhat-9-x86_64/gnuplot/5.4.3/bin:/pbs/software/redhat-9-x86_64/python/3.12.2/bin:/pbs/software/redhat-9-x86_64/cmake/3.29.2/bin:/pbs/software/redhat-9-x86_64/ninja/1.12.1/bin:/pbs/software/redhat-9-x86_64/git/2.44.0/bin:/sps/nemo/sw/redhat-9-x86_64/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:.:/opt/puppetlabs/bin:/opt/ccin2p3/bin:.
+[log] load_xercesc_3_2_5_setup: Updated LD_LIBRARY_PATH : /pbs/software/redhat-9-x86_64/python/3.12.2/lib
+[log] load_xercesc_3_2_5_setup: Updated PKG_CONFIG_PATH : /pbs/software/redhat-9-x86_64/xerces/3.2.5/lib64/pkgconfig:/pbs/software/redhat-9-x86_64/python/3.12.2/lib/pkgconfig
+[warning] load_g4datasets_9_6_4b_setup : g4datasets version 9.6.4b is already setup !
+[log] load_qt5_5_15_9_setup: Setting qt5 5.15.9...
+[log] load_qt5_5_15_9_setup: qt5 version 5.15.9 can be located using pkg-config.
+[log] load_qt5_5_15_9_setup: qt5 version 5.15.9 is setup.
+[log] load_geant4_9_6_4b_setup: Setting geant4 9.6.4b...
+[warning] load_geant4_9_6_4b_setup : geant4 version 9.6.4b is already setup !
+[log] load_root_6_26_06b_setup: Setting root 6.26.06b...
+[warning] load_root_6_26_06b_setup : root version 6.26.06b is already setup!
+[log] load_bxdecay0data_1_0_1_setup : Setting bxdecay0data 1.0.1...
+[log] load_bxdecay0data_1_0_1_setup : Path to the bxdecay0data 'DBD gA' dataset : '/sps/nemo/sw/redhat-9-x86_64/snsw/data/bxdecay0data-1.0.1/processes/dbd_gA'
+[log] load_bxdecay0data_1_0_1_setup : bxdecay0data version 1.0.1 is setup.
+[log] load_bxdecay0_1_1_2b_setup : Setting bxdecay0 1.1.2b...
+[log] load_bxdecay0_1_1_2b_setup : Path to the bxdecay0 'DBD gA' dataset is defined.
+[warning] load_bxdecay0_1_1_2b_setup : bxdecay0 version 1.1.2b is already setup !
+[log] load_bayeux_3_5_5c_setup: Setting bayeux 3.5.5c...
+[warning] load_bayeux_3_5_5c_setup : bayeux version 3.5.5c is already setup!
+[log] load_mariadb_connc_3_4_5_setup: Setting mariadb_connc 3.4.5...
+[warning] load_mariadb_connc_3_4_5_setup : mariadb_connc version 3.4.5 is already setup!
+[log] load_mariadb_conncpp_1_1_7-fmauger-1_setup: Setting mariadb_conncpp 1.1.7-fmauger-1...
+[warning] load_mariadb_conncpp_1_1_7-fmauger-1_setup : mariadb_conncpp version 1.1.7-fmauger-1 is already setup!
+[log] load_sncabling_1_1_2_setup: Setting sncabling 1.1.2...
+[warning] load_sncabling_1_1_2_setup : sncabling version 1.1.2 is already setup!
+[log] load_snrs_1_1_1_setup: Setting snrs 1.1.1...
+[warning] load_snrs_1_1_1_setup : snrs version 1.1.1 is already setup!
+[log] load_snfee_1_1_1_setup: Setting snfee 1.1.1...
+[warning] load_snfee_1_1_1_setup : snfee version 1.1.1 is already setup!
+[log] load_falaise_5_1_5_setup: Setting falaise 5.1.5...
+[warning] load_falaise_5_1_5_setup : falaise version 5.1.5 is already setup!
+   ------------------------------------------------------------------
+  | Welcome to ROOT 6.26/06                        https://root.cern |
+  | (c) 1995-2021, The ROOT Team; conception: R. Brun, F. Rademakers |
+  | Built for linuxx8664gcc on Jul 28 2022, 18:08:51                 |
+  | From tags/v6-26-06@v6-26-06                                      |
+  | With g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-2)                |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q'       |
+   ------------------------------------------------------------------
+
+
+Processing get_eps.C...
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/TArrayCMod.h
+   requested to autoload type TArrayCMod
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/brio_record.h
+   requested to autoload type brio_record
+Processing folder DATA/0/cutsSS
+Folder 0, cutsSS: eps = 0.0065 %  (passed=13, entries=1344)
+Processing folder DATA/0/cutsSK
+Folder 0, cutsSK: eps = 0.0045 %  (passed=9, entries=822)
+Processing folder DATA/0/cutsKK
+Folder 0, cutsKK: eps = 0 %  (passed=0, entries=135)
+Processing folder DATA/1/cutsSS
+Folder 1, cutsSS: eps = 0.0075 %  (passed=15, entries=1289)
+Processing folder DATA/1/cutsSK
+Folder 1, cutsSK: eps = 0.0015 %  (passed=3, entries=891)
+Processing folder DATA/1/cutsKK
+Folder 1, cutsKK: eps = 0 %  (passed=0, entries=152)
+Processing folder DATA/2/cutsSS
+Folder 2, cutsSS: eps = 0.0055 %  (passed=11, entries=1301)
+Processing folder DATA/2/cutsSK
+Folder 2, cutsSK: eps = 0.002 %  (passed=4, entries=890)
+Processing folder DATA/2/cutsKK
+Folder 2, cutsKK: eps = 0 %  (passed=0, entries=164)
+Processing folder DATA/3/cutsSS
+Folder 3, cutsSS: eps = 0.0075 %  (passed=15, entries=1378)
+Processing folder DATA/3/cutsSK
+Folder 3, cutsSK: eps = 0.003 %  (passed=6, entries=912)
+Processing folder DATA/3/cutsKK
+Folder 3, cutsKK: eps = 0 %  (passed=0, entries=143)
+Processing folder DATA/4/cutsSS
+Folder 4, cutsSS: eps = 0.0055 %  (passed=11, entries=1311)
+Processing folder DATA/4/cutsSK
+Folder 4, cutsSK: eps = 0.0015 %  (passed=3, entries=870)
+Processing folder DATA/4/cutsKK
+Folder 4, cutsKK: eps = 0 %  (passed=0, entries=141)
+Processing folder DATA/5/cutsSS
+Folder 5, cutsSS: eps = 0.005 %  (passed=10, entries=1275)
+Processing folder DATA/5/cutsSK
+Folder 5, cutsSK: eps = 0.002 %  (passed=4, entries=879)
+Processing folder DATA/5/cutsKK
+Folder 5, cutsKK: eps = 0.001 %  (passed=2, entries=125)
+Processing folder DATA/6/cutsSS
+Folder 6, cutsSS: eps = 0.005 %  (passed=10, entries=1365)
+Processing folder DATA/6/cutsSK
+Folder 6, cutsSK: eps = 0.0015 %  (passed=3, entries=895)
+Processing folder DATA/6/cutsKK
+Folder 6, cutsKK: eps = 0 %  (passed=0, entries=156)
+Processing folder DATA/7/cutsSS
+Folder 7, cutsSS: eps = 0.0085 %  (passed=17, entries=1297)
+Processing folder DATA/7/cutsSK
+Folder 7, cutsSK: eps = 0.003 %  (passed=6, entries=844)
+Processing folder DATA/7/cutsKK
+Folder 7, cutsKK: eps = 0 %  (passed=0, entries=122)
+Processing folder DATA/8/cutsSS
+Folder 8, cutsSS: eps = 0.0065 %  (passed=13, entries=1300)
+Processing folder DATA/8/cutsSK
+Folder 8, cutsSK: eps = 0.005 %  (passed=10, entries=898)
+Processing folder DATA/8/cutsKK
+Folder 8, cutsKK: eps = 0 %  (passed=0, entries=173)
+Processing folder DATA/9/cutsSS
+Folder 9, cutsSS: eps = 0.0065 %  (passed=13, entries=1349)
+Processing folder DATA/9/cutsSK
+Folder 9, cutsSK: eps = 0.003 %  (passed=6, entries=871)
+Processing folder DATA/9/cutsKK
+Folder 9, cutsKK: eps = 0.0005 %  (passed=1, entries=162)
+Processing folder DATA/10/cutsSS
+Folder 10, cutsSS: eps = 0.0075 %  (passed=15, entries=1329)
+Processing folder DATA/10/cutsSK
+Folder 10, cutsSK: eps = 0.002 %  (passed=4, entries=872)
+Processing folder DATA/10/cutsKK
+Folder 10, cutsKK: eps = 0.0005 %  (passed=1, entries=166)
+Processing folder DATA/11/cutsSS
+Folder 11, cutsSS: eps = 0.0045 %  (passed=9, entries=1244)
+Processing folder DATA/11/cutsSK
+Folder 11, cutsSK: eps = 0.003 %  (passed=6, entries=894)
+Processing folder DATA/11/cutsKK
+Folder 11, cutsKK: eps = 0.0005 %  (passed=1, entries=136)
+Processing folder DATA/12/cutsSS
+Folder 12, cutsSS: eps = 0.0065 %  (passed=13, entries=1232)
+Processing folder DATA/12/cutsSK
+Folder 12, cutsSK: eps = 0.0015 %  (passed=3, entries=874)
+Processing folder DATA/12/cutsKK
+Folder 12, cutsKK: eps = 0 %  (passed=0, entries=121)
+Processing folder DATA/13/cutsSS
+Folder 13, cutsSS: eps = 0.0045 %  (passed=9, entries=1354)
+Processing folder DATA/13/cutsSK
+Folder 13, cutsSK: eps = 0.001 %  (passed=2, entries=784)
+Processing folder DATA/13/cutsKK
+Folder 13, cutsKK: eps = 0 %  (passed=0, entries=158)
+Processing folder DATA/14/cutsSS
+Folder 14, cutsSS: eps = 0.0065 %  (passed=13, entries=1363)
+Processing folder DATA/14/cutsSK
+Folder 14, cutsSK: eps = 0.0025 %  (passed=5, entries=852)
+Processing folder DATA/14/cutsKK
+Folder 14, cutsKK: eps = 0 %  (passed=0, entries=138)
+Processing folder DATA/15/cutsSS
+Folder 15, cutsSS: eps = 0.0065 %  (passed=13, entries=1296)
+Processing folder DATA/15/cutsSK
+Folder 15, cutsSK: eps = 0.001 %  (passed=2, entries=876)
+Processing folder DATA/15/cutsKK
+Folder 15, cutsKK: eps = 0 %  (passed=0, entries=121)
+Processing folder DATA/16/cutsSS
+Folder 16, cutsSS: eps = 0.005 %  (passed=10, entries=1243)
+Processing folder DATA/16/cutsSK
+Folder 16, cutsSK: eps = 0.001 %  (passed=2, entries=871)
+Processing folder DATA/16/cutsKK
+Folder 16, cutsKK: eps = 0 %  (passed=0, entries=131)
+Processing folder DATA/17/cutsSS
+Folder 17, cutsSS: eps = 0.007 %  (passed=14, entries=1260)
+Processing folder DATA/17/cutsSK
+Folder 17, cutsSK: eps = 0.0035 %  (passed=7, entries=846)
+Processing folder DATA/17/cutsKK
+Folder 17, cutsKK: eps = 0.0005 %  (passed=1, entries=117)
+Processing folder DATA/18/cutsSS
+Folder 18, cutsSS: eps = 0.0055 %  (passed=11, entries=1302)
+Processing folder DATA/18/cutsSK
+Folder 18, cutsSK: eps = 0.002 %  (passed=4, entries=886)
+Processing folder DATA/18/cutsKK
+Folder 18, cutsKK: eps = 0 %  (passed=0, entries=128)
+Processing folder DATA/19/cutsSS
+Folder 19, cutsSS: eps = 0.0085 %  (passed=17, entries=1365)
+Processing folder DATA/19/cutsSK
+Folder 19, cutsSK: eps = 0.0005 %  (passed=1, entries=849)
+Processing folder DATA/19/cutsKK
+Folder 19, cutsKK: eps = 0 %  (passed=0, entries=124)
+Processing folder DATA/20/cutsSS
+Folder 20, cutsSS: eps = 0.009 %  (passed=18, entries=1334)
+Processing folder DATA/20/cutsSK
+Folder 20, cutsSK: eps = 0.0025 %  (passed=5, entries=918)
+Processing folder DATA/20/cutsKK
+Folder 20, cutsKK: eps = 0 %  (passed=0, entries=127)
+Processing folder DATA/21/cutsSS
+Folder 21, cutsSS: eps = 0.0065 %  (passed=13, entries=1383)
+Processing folder DATA/21/cutsSK
+Folder 21, cutsSK: eps = 0.0015 %  (passed=3, entries=864)
+Processing folder DATA/21/cutsKK
+Folder 21, cutsKK: eps = 0 %  (passed=0, entries=141)
+Processing folder DATA/22/cutsSS
+Folder 22, cutsSS: eps = 0.0055 %  (passed=11, entries=1420)
+Processing folder DATA/22/cutsSK
+Folder 22, cutsSK: eps = 0.0035 %  (passed=7, entries=888)
+Processing folder DATA/22/cutsKK
+Folder 22, cutsKK: eps = 0.0005 %  (passed=1, entries=160)
+Processing folder DATA/23/cutsSS
+Folder 23, cutsSS: eps = 0.0035 %  (passed=7, entries=1247)
+Processing folder DATA/23/cutsSK
+Folder 23, cutsSK: eps = 0.0025 %  (passed=5, entries=828)
+Processing folder DATA/23/cutsKK
+Folder 23, cutsKK: eps = 0.0005 %  (passed=1, entries=148)
+Processing folder DATA/24/cutsSS
+Folder 24, cutsSS: eps = 0.007 %  (passed=14, entries=1351)
+Processing folder DATA/24/cutsSK
+Folder 24, cutsSK: eps = 0.0025 %  (passed=5, entries=844)
+Processing folder DATA/24/cutsKK
+Folder 24, cutsKK: eps = 0 %  (passed=0, entries=164)
+Processing folder DATA/25/cutsSS
+Folder 25, cutsSS: eps = 0.008 %  (passed=16, entries=1265)
+Processing folder DATA/25/cutsSK
+Folder 25, cutsSK: eps = 0.002 %  (passed=4, entries=856)
+Processing folder DATA/25/cutsKK
+Folder 25, cutsKK: eps = 0 %  (passed=0, entries=165)
+Processing folder DATA/26/cutsSS
+Folder 26, cutsSS: eps = 0.01 %  (passed=20, entries=1304)
+Processing folder DATA/26/cutsSK
+Folder 26, cutsSK: eps = 0.001 %  (passed=2, entries=897)
+Processing folder DATA/26/cutsKK
+Folder 26, cutsKK: eps = 0 %  (passed=0, entries=144)
+Processing folder DATA/27/cutsSS
+Folder 27, cutsSS: eps = 0.0065 %  (passed=13, entries=1292)
+Processing folder DATA/27/cutsSK
+Folder 27, cutsSK: eps = 0.0015 %  (passed=3, entries=873)
+Processing folder DATA/27/cutsKK
+Folder 27, cutsKK: eps = 0 %  (passed=0, entries=128)
+Processing folder DATA/28/cutsSS
+Folder 28, cutsSS: eps = 0.008 %  (passed=16, entries=1372)
+Processing folder DATA/28/cutsSK
+Folder 28, cutsSK: eps = 0.0015 %  (passed=3, entries=867)
+Processing folder DATA/28/cutsKK
+Folder 28, cutsKK: eps = 0 %  (passed=0, entries=151)
+Processing folder DATA/29/cutsSS
+Folder 29, cutsSS: eps = 0.0075 %  (passed=15, entries=1287)
+Processing folder DATA/29/cutsSK
+Folder 29, cutsSK: eps = 0.0015 %  (passed=3, entries=865)
+Processing folder DATA/29/cutsKK
+Folder 29, cutsKK: eps = 0 %  (passed=0, entries=132)
+Processing folder DATA/30/cutsSS
+Folder 30, cutsSS: eps = 0.0075 %  (passed=15, entries=1282)
+Processing folder DATA/30/cutsSK
+Folder 30, cutsSK: eps = 0.0015 %  (passed=3, entries=887)
+Processing folder DATA/30/cutsKK
+Folder 30, cutsKK: eps = 0 %  (passed=0, entries=126)
+Processing folder DATA/31/cutsSS
+Folder 31, cutsSS: eps = 0.0085 %  (passed=17, entries=1316)
+Processing folder DATA/31/cutsSK
+Folder 31, cutsSK: eps = 0.0015 %  (passed=3, entries=833)
+Processing folder DATA/31/cutsKK
+Folder 31, cutsKK: eps = 0 %  (passed=0, entries=125)
+Processing folder DATA/32/cutsSS
+Folder 32, cutsSS: eps = 0.006 %  (passed=12, entries=1309)
+Processing folder DATA/32/cutsSK
+Folder 32, cutsSK: eps = 0.001 %  (passed=2, entries=839)
+Processing folder DATA/32/cutsKK
+Folder 32, cutsKK: eps = 0 %  (passed=0, entries=157)
+Processing folder DATA/33/cutsSS
+Folder 33, cutsSS: eps = 0.0035 %  (passed=7, entries=1273)
+Processing folder DATA/33/cutsSK
+Folder 33, cutsSK: eps = 0.0025 %  (passed=5, entries=852)
+Processing folder DATA/33/cutsKK
+Folder 33, cutsKK: eps = 0 %  (passed=0, entries=138)
+Processing folder DATA/34/cutsSS
+Folder 34, cutsSS: eps = 0.0105 %  (passed=21, entries=1367)
+Processing folder DATA/34/cutsSK
+Folder 34, cutsSK: eps = 0.001 %  (passed=2, entries=844)
+Processing folder DATA/34/cutsKK
+Folder 34, cutsKK: eps = 0 %  (passed=0, entries=143)
+Processing folder DATA/35/cutsSS
+Folder 35, cutsSS: eps = 0.0035 %  (passed=7, entries=1362)
+Processing folder DATA/35/cutsSK
+Folder 35, cutsSK: eps = 0.001 %  (passed=2, entries=862)
+Processing folder DATA/35/cutsKK
+Folder 35, cutsKK: eps = 0 %  (passed=0, entries=141)
+Processing folder DATA/36/cutsSS
+Folder 36, cutsSS: eps = 0.008 %  (passed=16, entries=1289)
+Processing folder DATA/36/cutsSK
+Folder 36, cutsSK: eps = 0.0015 %  (passed=3, entries=877)
+Processing folder DATA/36/cutsKK
+Folder 36, cutsKK: eps = 0 %  (passed=0, entries=148)
+Processing folder DATA/37/cutsSS
+Folder 37, cutsSS: eps = 0.009 %  (passed=18, entries=1290)
+Processing folder DATA/37/cutsSK
+Folder 37, cutsSK: eps = 0.001 %  (passed=2, entries=866)
+Processing folder DATA/37/cutsKK
+Folder 37, cutsKK: eps = 0.0005 %  (passed=1, entries=147)
+Processing folder DATA/38/cutsSS
+Folder 38, cutsSS: eps = 0.0055 %  (passed=11, entries=1363)
+Processing folder DATA/38/cutsSK
+Folder 38, cutsSK: eps = 0.0035 %  (passed=7, entries=894)
+Processing folder DATA/38/cutsKK
+Folder 38, cutsKK: eps = 0 %  (passed=0, entries=144)
+Processing folder DATA/39/cutsSS
+Folder 39, cutsSS: eps = 0.0035 %  (passed=7, entries=1227)
+Processing folder DATA/39/cutsSK
+Folder 39, cutsSK: eps = 0.0035 %  (passed=7, entries=850)
+Processing folder DATA/39/cutsKK
+Folder 39, cutsKK: eps = 0 %  (passed=0, entries=157)
+Processing folder DATA/40/cutsSS
+Folder 40, cutsSS: eps = 0.009 %  (passed=18, entries=1291)
+Processing folder DATA/40/cutsSK
+Folder 40, cutsSK: eps = 0.002 %  (passed=4, entries=903)
+Processing folder DATA/40/cutsKK
+Folder 40, cutsKK: eps = 0.0005 %  (passed=1, entries=134)
+Processing folder DATA/41/cutsSS
+Folder 41, cutsSS: eps = 0.009 %  (passed=18, entries=1293)
+Processing folder DATA/41/cutsSK
+Folder 41, cutsSK: eps = 0.0045 %  (passed=9, entries=854)
+Processing folder DATA/41/cutsKK
+Folder 41, cutsKK: eps = 0 %  (passed=0, entries=134)
+Processing folder DATA/42/cutsSS
+Folder 42, cutsSS: eps = 0.0085 %  (passed=17, entries=1287)
+Processing folder DATA/42/cutsSK
+Folder 42, cutsSK: eps = 0.001 %  (passed=2, entries=861)
+Processing folder DATA/42/cutsKK
+Folder 42, cutsKK: eps = 0 %  (passed=0, entries=145)
+Processing folder DATA/43/cutsSS
+Folder 43, cutsSS: eps = 0.008 %  (passed=16, entries=1275)
+Processing folder DATA/43/cutsSK
+Folder 43, cutsSK: eps = 0.0025 %  (passed=5, entries=866)
+Processing folder DATA/43/cutsKK
+Folder 43, cutsKK: eps = 0.0005 %  (passed=1, entries=121)
+Processing folder DATA/44/cutsSS
+Warning in <TFile::Init>: file DATA/44/cutsSS/Default.root probably not closed, trying to recover
+Info in <TFile::Recover>: DATA/44/cutsSS/Default.root, recovered key TTree:Event at address 59327771
+Warning in <TFile::Init>: successfully recovered 1 keys
+Folder 44, cutsSS: eps = 0.0075 %  (passed=15, entries=1224)
+Processing folder DATA/44/cutsSK
+Warning in <TFile::Init>: file DATA/44/cutsSK/Default.root probably not closed, trying to recover
+Info in <TFile::Recover>: DATA/44/cutsSK/Default.root, recovered key TTree:Event at address 30484127
+Warning in <TFile::Init>: successfully recovered 1 keys
+Folder 44, cutsSK: eps = 0.003 %  (passed=6, entries=575)
+Processing folder DATA/44/cutsKK
+Warning in <TFile::Init>: file DATA/44/cutsKK/Default.root probably not closed, trying to recover
+Warning in <TFile::Init>: no keys recovered, file has been made a Zombie
+  -> cannot open file DATA/44/cutsKK/Default.root
+Processing folder DATA/45/cutsSS
+Folder 45, cutsSS: eps = 0.0045 %  (passed=9, entries=1275)
+Processing folder DATA/45/cutsSK
+Folder 45, cutsSK: eps = 0.002 %  (passed=4, entries=917)
+Processing folder DATA/45/cutsKK
+Folder 45, cutsKK: eps = 0 %  (passed=0, entries=137)
+Processing folder DATA/46/cutsSS
+Folder 46, cutsSS: eps = 0.0115 %  (passed=23, entries=1358)
+Processing folder DATA/46/cutsSK
+Folder 46, cutsSK: eps = 0.001 %  (passed=2, entries=874)
+Processing folder DATA/46/cutsKK
+Folder 46, cutsKK: eps = 0 %  (passed=0, entries=142)
+Processing folder DATA/47/cutsSS
+Folder 47, cutsSS: eps = 0.003 %  (passed=6, entries=1326)
+Processing folder DATA/47/cutsSK
+Folder 47, cutsSK: eps = 0.0025 %  (passed=5, entries=865)
+Processing folder DATA/47/cutsKK
+Folder 47, cutsKK: eps = 0 %  (passed=0, entries=143)
+Processing folder DATA/48/cutsSS
+Folder 48, cutsSS: eps = 0.008 %  (passed=16, entries=1297)
+Processing folder DATA/48/cutsSK
+Folder 48, cutsSK: eps = 0.001 %  (passed=2, entries=884)
+Processing folder DATA/48/cutsKK
+Folder 48, cutsKK: eps = 0 %  (passed=0, entries=158)
+Processing folder DATA/49/cutsSS
+Folder 49, cutsSS: eps = 0.008 %  (passed=16, entries=1290)
+Processing folder DATA/49/cutsSK
+Folder 49, cutsSK: eps = 0.001 %  (passed=2, entries=854)
+Processing folder DATA/49/cutsKK
+Folder 49, cutsKK: eps = 0 %  (passed=0, entries=147)
+[done] results saved to DATA/get_eps_summary.txt
+****************************************************************
+*                      SLURM Batch System                      *
+*           IN2P3 Computing Centre, Villeurbanne FR            *
+****************************************************************
+Date: Tue Sep  9 10:45:46 AM CEST 2025
+Job informations can be found using these commands:
+Accounting:
+sacct -j 4223754
+Efficiency:
+seff 4223754
+****************************************************************

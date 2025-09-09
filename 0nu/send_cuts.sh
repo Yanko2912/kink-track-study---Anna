@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ===== SLURM options =====
-#SBATCH --job-name=0nubb_Se82_10p2eve_single_job
+#SBATCH --job-name=0nu
 #SBATCH --mem=700M
 #SBATCH --licenses=sps
 #SBATCH --time=02:00:00

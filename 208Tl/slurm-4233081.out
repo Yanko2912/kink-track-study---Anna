@@ -1,0 +1,28 @@
+**********************************************************************
+*                         SLURM Batch System                         *
+*              IN2P3 Computing Centre, Villeurbanne FR               *
+**********************************************************************
+* Date:                 Tue Sep  9 11:36:13 AM CEST 2025
+* Job name:             208TlEps
+* Job id:               4233081
+* User:                 ayanko
+* Account:              nemo
+* Submit host:          cca014
+* Partition:            htc
+* Quality of service:   normal
+* Nodelist:             ccwslurm0191
+* Operating System:     Red Hat Enterprise Linux release 9.6 (Plow)
+* Architecture:         x86_64
+**********************************************************************
+/var/spool/slurmd/job4233081/slurm_script: line 12: root: command not found
+****************************************************************
+*                      SLURM Batch System                      *
+*           IN2P3 Computing Centre, Villeurbanne FR            *
+****************************************************************
+Date: Tue Sep  9 11:36:13 AM CEST 2025
+Job informations can be found using these commands:
+Accounting:
+sacct -j 4233081
+Efficiency:
+seff 4233081
+****************************************************************

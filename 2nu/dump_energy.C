@@ -7,7 +7,9 @@
 #include <TH1D.h>
 #include <TSystem.h>
 #include <TROOT.h>
+#include <TString.h>
 
+#include <memory>
 #include <vector>
 #include <iostream>
 
@@ -15,75 +17,85 @@ R__LOAD_LIBRARY(../../software/MiModule/lib/libMiModule.so)
 
 void dump_energy()
 {
-  // ???????? ?????? ?? ???? ????????? ??????
-  TH1D* hEnergySpectrumTotal = new TH1D("hEnergySpectrumTotal",
-                                        "Total energy spectrum;Energy [keV];Counts",
-                                        100, 0, 5000);
-  hEnergySpectrumTotal->SetDirectory(nullptr);
+  std::vector<TString> procs = {"cutsKK", "cutsSS", "cutsSK"};
 
-  for (int i = 0; i < 50; ++i) {   // ???? 50 ?????
-    TString folder   = Form("DATA/%d", i);
-    TString infile   = folder + "/Default.root";
-    TString outfile  = folder + "/energy_spectrum.root";
+  TH1D* hTotalKK = new TH1D("hEnergySpectrumTotal_KK", "Energy spectrum (cutsKK);Energy [keV];Counts", 100, 0, 5000);
+  TH1D* hTotalSS = new TH1D("hEnergySpectrumTotal_SS", "Energy spectrum (cutsSS);Energy [keV];Counts", 100, 0, 5000);
+  TH1D* hTotalSK = new TH1D("hEnergySpectrumTotal_SK", "Energy spectrum (cutsSK);Energy [keV];Counts", 100, 0, 5000);
 
-    // ???? ? ????? ????? Default.root ? ???????????
-    if (gSystem->AccessPathName(infile, kFileExists)) {
-      continue;
-    }
+  for (TH1D* h : {hTotalKK, hTotalSS, hTotalSK}) {
+    h->SetDirectory(nullptr);
+  }
 
-    // ??????????? ??????? ????
-    TFile* f = TFile::Open(infile, "READ");
-    if (!f || f->IsZombie()) {
-      if (f) f->Close();
-      continue;
-    }
+ 
+  Long64_t nEventsKK = 0, nEventsSS = 0, nEventsSK = 0;
 
-    TTree* t = (TTree*) f->Get("Event");
-    if (!t) {
-      f->Close();
-      continue;
-    }
+  for (int i = 0; i <= 49; ++i) {   
+    TString folderBase = Form("DATA/%d", i);
 
-    MiEvent* Eve = nullptr;
-    t->SetBranchAddress("Eventdata", &Eve);
+    for (const auto& P : procs) {
+      TString folder   = folderBase + "/" + P;
+      TString infile   = folder + "/Default.root";
+      TString outfile  = folder + "/energy_spectrum.root";
 
-    // ????????? ?????? ??? ???? ?????
-    TH1D* hEnergySpectrumFolder = new TH1D(Form("hEnergySpectrumFolder_%d", i),
-                                           Form("Energy spectrum folder %d;Energy [keV];Counts", i),
-                                           100, 0, 5000);
-    hEnergySpectrumFolder->SetDirectory(nullptr);
-
-    const Long64_t nentries = t->GetEntries();
-    for (Long64_t ie = 0; ie < nentries; ++ie) {
-      t->GetEntry(ie);
-
-      double e = Eve->gettotE();
-      hEnergySpectrumFolder->Fill(e);
-      hEnergySpectrumTotal->Fill(e);
-    }
-
-    // ?????? ????????? ?????? ? DATA/<i>/energy_spectrum.root
-    {
-      TFile f_output(outfile, "RECREATE");
-      if (!f_output.IsZombie()) {
-        TH1D* hToWrite = (TH1D*) hEnergySpectrumFolder->Clone("hEnergySpectrumFolder");
-        hToWrite->SetDirectory(&f_output);
-        hToWrite->Write();
-        f_output.Close();
+      if (gSystem->AccessPathName(infile, kFileExists)) {
+        std::cout << "[skip] missing " << infile << std::endl;
+        continue;
       }
-    }
 
-    f->Close();
+      std::unique_ptr<TFile> f(TFile::Open(infile, "READ"));
+      if (!f || f->IsZombie()) {
+        std::cout << "[warn] bad file " << infile << std::endl;
+        continue;
+      }
+
+      TTree* t = (TTree*) f->Get("Event");
+      if (!t) {
+        std::cout << "[warn] no TTree 'Event' in " << infile << std::endl;
+        continue;
+      }
+
+      MiEvent* Eve = nullptr;
+      t->SetBranchAddress("Eventdata", &Eve);
+
+      TH1D* hFolder = new TH1D(Form("hEnergySpectrum_%s_%d", P.Data(), i),
+                               Form("Energy spectrum %s folder %d;Energy [keV];Counts", P.Data(), i),
+                               10000, 0, 5000);
+      hFolder->SetDirectory(nullptr);
+
+      const Long64_t nentries = t->GetEntries();
+      for (Long64_t ie = 0; ie < nentries; ++ie) {
+        t->GetEntry(ie);
+        double e = Eve->gettotE();
+        hFolder->Fill(e);
+
+        if (P=="cutsKK") { hTotalKK->Fill(e); ++nEventsKK; }
+        else if (P=="cutsSS") { hTotalSS->Fill(e); ++nEventsSS; }
+        else if (P=="cutsSK") { hTotalSK->Fill(e); ++nEventsSK; }
+      }
+
+    
+      TFile fOut(outfile, "RECREATE");
+      if (!fOut.IsZombie()) {
+        TH1D* hToWrite = (TH1D*) hFolder->Clone("hEnergySpectrum");
+        hToWrite->SetDirectory(&fOut);
+        hToWrite->Write();
+        fOut.Close();
+      }
+      delete hFolder;
+    }
   }
 
-  // ???????? ? ???????? ?????? ?? ???? ??????
-  {
-    TFile f_output_all("DATA/energy_spectrum_total.root", "RECREATE");
-    if (!f_output_all.IsZombie()) {
-      TH1D* hTotalToWrite = (TH1D*) hEnergySpectrumTotal->Clone("hEnergySpectrumTotal");
-      hTotalToWrite->SetDirectory(&f_output_all);
-      hTotalToWrite->Write();
-      f_output_all.Close();
-    }
-  }
+
+  TFile fAll("DATA/energy_spectrum_totals.root", "RECREATE");
+  hTotalKK->Write();
+  hTotalSS->Write();
+  hTotalSK->Write();
+  fAll.Close();
+
+  std::cout << "[done] Results saved to DATA/energy_spectrum_totals.root" << std::endl;
+ 
+  std::cout << "[info] counts: KK=" << nEventsKK
+            << " SS=" << nEventsSS
+            << " SK=" << nEventsSK << std::endl;
 }

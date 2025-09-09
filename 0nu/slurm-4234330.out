@@ -1,0 +1,94 @@
+**********************************************************************
+*                         SLURM Batch System                         *
+*              IN2P3 Computing Centre, Villeurbanne FR               *
+**********************************************************************
+* Date:                 Tue Sep  9 11:50:32 AM CEST 2025
+* Job name:             0nuEps
+* Job id:               4234330
+* User:                 ayanko
+* Account:              nemo
+* Submit host:          cca014
+* Partition:            htc
+* Quality of service:   normal
+* Nodelist:             ccwslurm0111
+* Operating System:     Red Hat Enterprise Linux release 9.6 (Plow)
+* Architecture:         x86_64
+**********************************************************************
+   ------------------------------------------------------------------
+  | Welcome to ROOT 6.26/06                        https://root.cern |
+  | (c) 1995-2021, The ROOT Team; conception: R. Brun, F. Rademakers |
+  | Built for linuxx8664gcc on Jul 28 2022, 18:08:51                 |
+  | From tags/v6-26-06@v6-26-06                                      |
+  | With g++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-2)                |
+  | Try '.help', '.demo', '.license', '.credits', '.quit'/'.q'       |
+   ------------------------------------------------------------------
+
+
+Processing get_eps.C...
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/TArrayCMod.h
+   requested to autoload type TArrayCMod
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for brio/detail/brio_record.h
+   requested to autoload type brio_record
+Processing folder DATA/0/cutsSS
+Folder 0, cutsSS: eps = 13.325 %  (passed=26650, entries=43670)
+Processing folder DATA/0/cutsSK
+Folder 0, cutsSK: eps = 4.2335 %  (passed=8467, entries=17554)
+Processing folder DATA/0/cutsKK
+Folder 0, cutsKK: eps = 0.259 %  (passed=518, entries=1510)
+Processing folder DATA/1/cutsSS
+Folder 1, cutsSS: eps = 13.427 %  (passed=26854, entries=43862)
+Processing folder DATA/1/cutsSK
+Folder 1, cutsSK: eps = 4.273 %  (passed=8546, entries=17555)
+Processing folder DATA/1/cutsKK
+Folder 1, cutsKK: eps = 0.247 %  (passed=494, entries=1511)
+Processing folder DATA/2/cutsSS
+Folder 2, cutsSS: eps = 13.468 %  (passed=26936, entries=43743)
+Processing folder DATA/2/cutsSK
+Folder 2, cutsSK: eps = 4.181 %  (passed=8362, entries=17321)
+Processing folder DATA/2/cutsKK
+Folder 2, cutsKK: eps = 0.2555 %  (passed=511, entries=1550)
+Processing folder DATA/3/cutsSS
+Folder 3, cutsSS: eps = 13.438 %  (passed=26876, entries=43693)
+Processing folder DATA/3/cutsSK
+Folder 3, cutsSK: eps = 4.157 %  (passed=8314, entries=17304)
+Processing folder DATA/3/cutsKK
+Folder 3, cutsKK: eps = 0.248 %  (passed=496, entries=1506)
+Processing folder DATA/4/cutsSS
+Folder 4, cutsSS: eps = 13.3795 %  (passed=26759, entries=43817)
+Processing folder DATA/4/cutsSK
+Folder 4, cutsSK: eps = 4.1705 %  (passed=8341, entries=17426)
+Processing folder DATA/4/cutsKK
+Folder 4, cutsKK: eps = 0.2505 %  (passed=501, entries=1536)
+Processing folder DATA/5/cutsSS
+Folder 5, cutsSS: eps = 13.4425 %  (passed=26885, entries=43727)
+Processing folder DATA/5/cutsSK
+Folder 5, cutsSK: eps = 4.2675 %  (passed=8535, entries=17512)
+Processing folder DATA/5/cutsKK
+Folder 5, cutsKK: eps = 0.2705 %  (passed=541, entries=1591)
+Processing folder DATA/6/cutsSS
+Folder 6, cutsSS: eps = 13.42 %  (passed=26840, entries=43788)
+Processing folder DATA/6/cutsSK
+Folder 6, cutsSK: eps = 4.2135 %  (passed=8427, entries=17530)
+Processing folder DATA/6/cutsKK
+Folder 6, cutsKK: eps = 0.244 %  (passed=488, entries=1512)
+Processing folder DATA/7/cutsSS
+Folder 7, cutsSS: eps = 13.4305 %  (passed=26861, entries=43725)
+Processing folder DATA/7/cutsSK
+Folder 7, cutsSK: eps = 4.2175 %  (passed=8435, entries=17525)
+Processing folder DATA/7/cutsKK
+Folder 7, cutsKK: eps = 0.2615 %  (passed=523, entries=1551)
+Processing folder DATA/8/cutsSS
+Folder 8, cutsSS: eps = 13.389 %  (passed=26778, entries=43815)
+Processing folder DATA/8/cutsSK
+Folder 8, cutsSK: eps = 4.254 %  (passed=8508, entries=17557)
+Processing folder DATA/8/cutsKK
+Folder 8, cutsKK: eps = 0.2465 %  (passed=493, entries=1502)
+Processing folder DATA/9/cutsSS
+Folder 9, cutsSS: eps = 13.4015 %  (passed=26803, entries=43673)
+Processing folder DATA/9/cutsSK
+Folder 9, cutsSK: eps = 4.231 %  (passed=8462, entries=17370)
+Processing folder DATA/9/cutsKK
+Folder 9, cutsKK: eps = 0.2495 %  (passed=499, entries=1546)
+Processing folder DATA/10/cutsSS
